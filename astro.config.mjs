@@ -10,7 +10,7 @@ export default defineConfig({
 			customCss: [
 				'./src/style/site.css',
 			],
-			title: 'TS4 Modders Reference',
+			title: 'The Sims 4 Modders Reference',
 			social: [
 				{
 					icon: 'discord',
