@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-description: Index of Guides and Turorials on the Modders Reference Website
+description: Index of Tutorials on the Modders Reference Website
 template: splash
 ---
 
@@ -8,7 +8,7 @@ template: splash
 
 <summary>Beginner Tutorials</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/guides/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
 
 </details>
 
