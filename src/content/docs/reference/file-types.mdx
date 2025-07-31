@@ -1,0 +1,181 @@
+---
+title: File Types
+description: Files you may come across.
+---
+While you create and look around the game's files, you'll come across many different files. Here's a brief description of some.
+
+## File Extensions
+
+These are files that you will primarily see/edit/create as a final product. These are the files that you install somewhere (or the game does).
+
+### .package
+
+A .package file (commonly called a package or package file) is a Maxis proprietary file format. It's used both for mods and game files. It can contain a single file or many files, such as tuning files, images, and strings. The game reads the files contained in the package file, and assuming they're created and used correctly, will use the contents in game.
+
+Package files are used by modders for things such as tuning mods, custom content, <abbr title="User Interfacce">UI</abbr> mods, string overrides, etc. Most mods contain one or more package files. They are the most commonly used file format for mods.
+
+Package files are used in game files in the user data folder in Documents (localthumbcache.package and accountDataDB.package, for example) and in the game's installed files (ClientDeltaBuild0.package, magalog.package, etc.).
+
+### .ts4script
+
+A .ts4script file (commonly called a script or a script file) is a renamed .zip (compressed folder) file. They contain python script mods, most commonly in compiled .pyc files.
+
+Script mods interact with the game's python coding, allowing them to do things that mods that have tuning files only can't do, including injecting tuning so that multiple tuning mods can co-exist without overriding the same things and adding new things that don't exist in the game, such as new classes, or altering the way scripted parts of the game work.
+
+Most mods don't require a script, but there are some things that can't be done without one. Most, but not all, script mods (mods that have a script file) also have one or more package file.
+
+### .blueprint, .bpi, .hhi, .householdbinary, .rmi, .room, .sgi, .trayitem
+
+These are files that are typically found in the tray folder. Any tray item (a household, room, or lot) will be made up of multiple of these. Which ones are involved for a particular tray item varies.
+
+One example of when these files may be used in modding is in creating household overrides for premade sims, or creating sims to spawn in game for a mod.
+
+### .cfg, .json
+
+These are settings files. They are used in game files, and may also be included with or created by mods that contain script files.
+
+### .ini
+
+These are settings files, and are typically used in game files, both in the user data folder in documents and in the game's installed files.
+
+One example of when you may be working with these files is if you're working with the game's camera settings.
+
+### .log
+
+These are log files, usually created by a mod that contains a script file.
+
+### .RAR, .7z, .zip
+
+These are compressed folders that contain useful files, and the contents are usually extracted before using them.
+
+.ts4script files are renamed .zip folders.
+
+Mods and custom content are often uploaded in compressed folders of one sort or another.
+
+### .save, .ver0, .ver1, .ver2, .ver3, .ver4
+
+These are files that are found in the saves folder in the user data folder in documents. They are the save files, with up to five backups per save slot (.ver0 to .ver4).
+
+### .txt
+
+These are plain text files. They may be used by the game or created by mods that contain script files.
+
+### .world
+
+These are files that determine what a world looks and acts like in game.
+
+One example of when a .world file is used in modding would be certain kinds of lighting overrides.
+
+# Internal Files
+
+These are files that are primarily used inside another file, such as a package or a script file. They are typically not used as an end product.
+
+## Script Mod Files
+
+### .py
+
+An uncompiled python file. Python files are used in script mods, but are usually compiled and placed in a .ts4script file before use.
+
+### .pyc
+
+A compiled python file. Python files are used in script mods, and are usually compiled and placed in a .ts4script file for use.
+
+## General Files in Packages
+
+### DST Image
+
+May be icons, object diffuse images, normal or specular maps, or various other game images.
+
+### Animation State Machine
+
+Information about an animation.
+
+### Clip
+
+An animation.
+
+### Household Template
+
+A template file for a premade household that will appear in a new game or when spawned by the game or a mod.
+
+### Magalog
+
+A file that contains information about objects that place as a group, such as a table that places with chairs pre-attached.
+
+### S4S Merged Package Manifest
+
+A file created by Sims 4 Studio and included in a package file when multiple package files are merged into one, listing all of the original packages and their contents. This file is essential if the package ever needs to be un-merged.
+
+### Scale Form GFX
+
+User Interface (UI) files.
+
+### Sim Data (in a package file)
+
+SimData is a file that is usually paired with a tuning file. It is required by many different tuning types but not all. When it is paired with a tuning type, it's not optional, and any elements that it has in common with the tuning file must match to prevent mysteriously unintended behaviour. Occasionally, there may be a SimData file that is not paired with a tuning file, or two SimDatas for one tuning file, but those cases are rare.
+
+An example of when SimData is used is in a Buff. The UI reads the SimData to know what to display to the player, because it doesn't have access to the tuning, and the simulation reads the tuning to know what effects the buff has.
+
+### String Table
+
+String Tables are files made up of stings, which are bits of text. They hold the text you see in game.
+
+## Tuning Mod Files
+
+Tuning files are written in XML (Extensible Markup Language).
+
+Important note: if your tuning is malformed, you will be unable to save your package. You must correct the issue before you will be able to save.
+
+### Action
+
+Action files are loots. They the game 'do a thing' when told to by another file: give a sim a buff, spawn or destroy an object, alter a commodity, etc.
+
+### Buff
+
+Buffs, or moodlets, may be the visible buffs you see in game or invisible buffs. If they are visible, they're the squares that you see under a sim's portrait in the bottom left. Visible buffs usually affect mood and have descriptive text. Invisible buffs are often used to control what a sim gains or loses from a trait or situation.
+
+### Interaction
+
+An interaction, also called an affordance, may be something that a player directs a sim to do, or something that happens on its own in the game when the right circumstances are met, or a set of things that may happen, or various other things.
+
+## Custom Content Files
+
+### CAS Part
+
+Contains various flags (telling the game when it can be used and by who, among other information) and other details about CAS custom content.
+
+### Footprint
+
+The shape and size or an object, along with various related properties.
+
+### Geometry
+
+Contains information about the physical properties of a CAS item.
+
+### LRLE Image
+
+Images used as the diffuse map for a CAS item.
+
+### Model, Model LOD
+
+Contains information about the physical properties of a Build/Buy item.
+
+### Object Catalog
+
+Contains information about a specific swatch of a build/buy item, such as tags and flags.
+
+### Object Definition
+
+Contains information about a specific swatch of a build/buy item, such as components, linked footprint, and tuning used.
+
+### Region Map
+
+Grouped information about a CAS item's LODs.
+
+### RLE 2 Image
+
+Images for certain CAS items. Diffuse maps for items that do not use colour sliders, and shadow maps.
+
+### RLES Image
+
+Specular maps for CAS items.

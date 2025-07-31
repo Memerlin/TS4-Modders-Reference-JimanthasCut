@@ -25,15 +25,22 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Tutorials',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Contents', slug: 'tutorials/contents' },
+						{ label: 'Custom Maps', slug: 'tutorials/custom-maps' },
+						{ label: 'Modifying Sim Appearances', slug: 'tutorials/modifying-sim-appearances' },
+						{ label: 'Links to Off-Site Tutorials', slug: 'tutorials/links-offsite' },
 					],
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'About',
+					autogenerate: {directory: 'about' },
 				},
 			],
 		}),
