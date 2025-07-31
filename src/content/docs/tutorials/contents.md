@@ -16,7 +16,7 @@ template: splash
 
 <summary>Tuning Mods</summary>
 
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/guides/modifying-sim-appearances/), by FellowFur
+* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
 
 </details>
 
@@ -24,7 +24,7 @@ template: splash
 
 <summary>Script Mods</summary>
 
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/guides/modifying-sim-appearances/), by FellowFur
+* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
 
 </details>
 
@@ -50,7 +50,7 @@ template: splash
 
 <summary>UI Mods</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/guides/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
 
 </details>
 
@@ -58,8 +58,8 @@ template: splash
 
 <summary>World Editing</summary>
 
-* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/guides/links-offsite/):
-    * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/guides/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
+* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/tutorials/links-offsite/):
+    * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/tutorials/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
 
 </details>
 
@@ -67,8 +67,8 @@ template: splash
 
 <summary>Text/Image Tutorials</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/guides/custom-maps/), by Alistu a.k.a. Menaceman44
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/guides/modifying-sim-appearances/), by FellowFur
+* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
 
 </details>
 
@@ -76,8 +76,8 @@ template: splash
 
 <summary>Video Tutorials</summary>
 
-* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/guides/links-offsite/):
-    * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/guides/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
+* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/tutorials/links-offsite/):
+    * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/tutorials/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
 
 </details>
 
@@ -85,10 +85,10 @@ template: splash
 
 <summary>All, Aplhabetical</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/guides/custom-maps/), by Alistu a.k.a. Menaceman44
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/guides/modifying-sim-appearances/), by FellowFur
+* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
 
-* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/guides/links-offsite/):
-    * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/guides/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
+* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/tutorials/links-offsite/):
+    * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/tutorials/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
 
 </details>
