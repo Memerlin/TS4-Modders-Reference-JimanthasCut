@@ -26,7 +26,7 @@ For this tutorial I will be showing you how to make an override for the Willow C
 
 Launch **Sims 4 Image Viewer** and go to "File > Common Files > UI".
 
-![Image Viewer open, with the path File > Common Files > UI shown](../../../src/assets/custom-map-alistu-1.jpg)
+![Image Viewer open, with the path File > Common Files > UI shown](../../../../src/assets/custom-map-alistu-1.jpg)
 
 The window on the left should then become populated with all of the images that are available in the UI package.
 
