@@ -3,7 +3,7 @@ title: Modifying Sim Appearances
 description: A tutorial for modifying sim appearances in a mod you're creating for The Sims 4
 ---
 
-<sup><sub>A tutorial by FellowFur
+<sup><sub>A tutorial by FellowFur</br>
 May need minor updates</sup></sub>
 
 This is a guide for how to modify sim's appearances **in a mod you're creating**, such as the Sim Furrifier. It exists as a resource for people who want to learn how it works, and isn't really useful for users of those mods.
