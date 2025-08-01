@@ -9,6 +9,17 @@ template: splash
 <summary>Beginner Tutorials</summary>
 
 * [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
+
+</details>
+
+<details>
+
+<summary>Modding Tools</summary>
+
+* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
 
 </details>
 
@@ -69,6 +80,8 @@ template: splash
 
 * [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
 * [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
+* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
 
 </details>
 
@@ -87,7 +100,8 @@ template: splash
 
 * [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
 * [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
-
+* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
 * [Links to Off-Site Tutorials](https://thesims4moddersreference.org/tutorials/links-offsite/):
     * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/tutorials/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
 

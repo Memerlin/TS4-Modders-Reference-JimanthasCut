@@ -31,6 +31,8 @@ export default defineConfig({
 						{ label: 'Contents', slug: 'tutorials/contents' },
 						{ label: 'Custom Maps', slug: 'tutorials/custom-maps' },
 						{ label: 'Modifying Sim Appearances', slug: 'tutorials/modifying-sim-appearances' },
+						{ label: 'XML Extractor', slug: 'tutorials/xml-extractor' },
+						{ label: 'XML File Finder', slug: 'tutorials/xml-file-finder' },
 						{ label: 'Links to Off-Site Tutorials', slug: 'tutorials/links-offsite' },
 					],
 				},

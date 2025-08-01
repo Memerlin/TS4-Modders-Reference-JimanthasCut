@@ -9,6 +9,8 @@ description: Contributors to this site
 * [FellowFur](https://www.nexusmods.com/thesims4/users/42871565)
 * [Fogity](https://www.patreon.com/c/fogity/)
 * [frankk](https://frankkmods.com/#/)
+* [Kallixer](https://www.patreon.com/c/Kallixer)
 * [Lumpinou](https://www.patreon.com/c/lumpinou/)
+* [NerdyDoll](https://www.patreon.com/c/nerdydoll/)
 * tee
 * [Waffle](https://www.patreon.com/c/waffle_mix_ins/)
