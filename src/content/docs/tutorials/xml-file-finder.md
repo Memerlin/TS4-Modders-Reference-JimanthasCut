@@ -71,7 +71,7 @@ Since Traits often have Trait Buffs, we can see the Buff\_Trait\_Bro tuning on t
 
 Instead, click on Buff\_Trait\_Bro. The window will update- you now have Buff\_Trait\_Bro selected and can see everything that references it on the left, and everything it references on the right. You just saw the two commodity tunings it references inside of its XML tuning, right? Now, they're listed in file finder because those were the only two references inside this XML. 
 
-![Buff_Trait_Bro showing its references, both from and to](../../../../src/assets/File-Finder-3-waffle.png)
+![Buff_Trait_Bro showing its references, both from and to](../../../../src/assets/File-finder-3-waffle.png)
 
 When viewing a particularly complicated XML, this is a very fast way to check everything that it references without having to scroll the entire thing and scan for tuning names and comments!
 
