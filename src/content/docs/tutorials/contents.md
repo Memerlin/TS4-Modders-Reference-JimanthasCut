@@ -79,9 +79,6 @@ tableOfContents: false
 
 <summary>World Editing</summary>
 
-* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/tutorials/links-offsite/):
-    * [Sims 4 World Modding - Part 1 | Adding Custom Objects](https://thesims4moddersreference.org/tutorials/links-offsite/#sims-4-world-modding---part-1--adding-custom-objects-by-cbx-sims), by CBX Sims
-
 </details>
 
 <details>
