@@ -3,16 +3,16 @@ title: Modifying Sim Appearances
 description: A tutorial for modifying sim appearances in a mod you're creating for The Sims 4
 ---
 
-<sup><sub>A tutorial by FellowFur</br>
+<sup><sub>Originally posted on [Nexus](https://www.nexusmods.com/thesims4/articles/151) by [FellowFur](https://www.nexusmods.com/thesims4/users/42871565).</br>
 May need minor updates</sup></sub>
 
-This is a guide for how to modify sim's appearances **in a mod you're creating**, such as the Sim Furrifier. It exists as a resource for people who want to learn how it works, and isn't really useful for users of those mods.
+This is a guide for how to modify sim's appearances in a mod you're creating.
 
 This guide assumes a basic knowledge of Sims 4 Modding, including Tuning, Python, and Sims 4 Studio. It focuses primarily on editing appearances through script, since it's much more powerful, but tuning options are also mentioned when available. It's split up into individual sections based on what category of appearance changes you want to make. They are collapsed to be less overwhelming. There's also "Notes" section at the end which has some relevant info, in particular the "Sims with Occult Forms" section is **extremely important** when editing appearances, even if you don't intent to edit any occult forms themselves.
 
 For all code snippets below, the `sim_info` variable refers to the `sim_info` object all sims have. I will not be explaining how to access this variable here, since it is an essential part of sim's script modding and I'm going to assume you already know how to access it.
 
-Also, if you have any recommendations or corrections to make, please let me know, even if it's just something like how to format the code blocks better. Also feel free to ask questions in the comments, or even decompile the mod this article is attached to to see an example of these principles in actual use.
+Also, if you have any recommendations or corrections to make, please let me know, even if it's just something like how to format the code blocks better. Also feel free to ask questions in the comments, or even decompile the mod this article is attached to to see an example of these principles in actual use. (__Note__: the original article, mod, and comment section are located [here](https://www.nexusmods.com/thesims4/articles/151); please ask any questions or leave any comments there.)
 
 ## Appearance Categories
 
@@ -709,10 +709,11 @@ if sim_info.age == Age.TEEN:
 
 Here's the game's body type enum, used to differentiate all the 'slots' a sim can have a part in. It may become out of date
 
-Markers:
-    * = A genetic body type, it must be the same part for all outfits and in the sim's **genetic** parts list
-    ^ = A **growth** body type, it can be used as a growth part
-    ~ = A body type that should **never be removed**, always substitute it for a 'blank' part
+Markers:<br>
+
+&nbsp;&nbsp; * = A genetic body type, it must be the same part for all outfits and in the sim's **genetic** parts list<br>
+&nbsp;&nbsp; ^ = A **growth** body type, it can be used as a growth part<br>
+&nbsp;&nbsp; ~ = A body type that should **never be removed**, always substitute it for a 'blank' part
 
 ```
 NONE = 0

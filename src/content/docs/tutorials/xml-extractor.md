@@ -9,7 +9,7 @@ description: A tutorial for using Scumbumbo's XML Extractor
 
 XML Extractor will extract the XMLs as .xml files which can simply be opened in a text editor. These files can also be opened directly in [Lot 51's Tdesc Builder](https://tdesc.lot51.cc/) for editing.
 
-A common use of the XML Extractor is to keep older versions of tuning around for comparison's sake after patches. If you extract the tuning after each patch, you can keep a folder of the previous tunings and a folder of the current tunings to easily compare them in a program such as WinMerge.
+A common use of the XML Extractor is to keep older versions of tuning around for comparison's sake after patches. If you extract the tuning after each patch, you can keep a folder of the previous tunings and a folder of the current tunings to easily compare them in a program such as ***[WinMerge, which you can find a tutorial for here](https://thesims4moddersreference.org/tutorials/winmerge/).***
 
 ## Features Explanation
 

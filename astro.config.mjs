@@ -28,9 +28,11 @@ export default defineConfig({
 					label: 'Tutorials',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Contents', slug: 'tutorials/contents' },
+						{ label: 'Index', slug: 'tutorials/contents' },
+						{ label: 'Comparing Files with WinMerge', slug: 'tutorials/winmerge' },
 						{ label: 'Custom Maps', slug: 'tutorials/custom-maps' },
 						{ label: 'Modifying Sim Appearances', slug: 'tutorials/modifying-sim-appearances' },
+						{ label: 'Using the Top Menu of Sims 4 Studio', slug: 'tutorials/s4s-top-menus' },
 						{ label: 'XML Extractor', slug: 'tutorials/xml-extractor' },
 						{ label: 'XML File Finder', slug: 'tutorials/xml-file-finder' },
 						{ label: 'Links to Off-Site Tutorials', slug: 'tutorials/links-offsite' },
