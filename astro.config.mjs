@@ -26,16 +26,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Tutorials',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Index', slug: 'tutorials/contents' },
-						{ label: 'Comparing Files with WinMerge', slug: 'tutorials/winmerge' },
-						{ label: 'Custom Maps', slug: 'tutorials/custom-maps' },
-						{ label: 'Modifying Sim Appearances', slug: 'tutorials/modifying-sim-appearances' },
-						{ label: 'XML Extractor', slug: 'tutorials/xml-extractor' },
-						{ label: 'XML File Finder', slug: 'tutorials/xml-file-finder' },
-						{ label: 'Links to Off-Site Tutorials', slug: 'tutorials/links-offsite' },
-					],
+					autogenerate: { directory: 'tutorials' },
 				},
 				{
 					label: 'Reference',
@@ -43,7 +34,11 @@ export default defineConfig({
 				},
 				{
 					label: 'About',
-					autogenerate: {directory: 'about' },
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'About This Site', slug: 'about/about' },
+						{ label: 'Contributors', slug: 'about/contributors' },
+					]
 				},
 			],
 		}),
