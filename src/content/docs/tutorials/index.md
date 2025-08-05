@@ -108,7 +108,7 @@ tableOfContents: false
 
 <details>
 
-<summary>All, Aplhabetical</summary>
+<summary>All, Alphabetical</summary>
 
 * [Comparing Files with WinMerge](../../../../tutorials/winmerge/), by Waffle
 * [Custom Maps](../../../../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
