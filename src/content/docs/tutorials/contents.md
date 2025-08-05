@@ -1,16 +1,18 @@
 ---
-title: Tutorials
+title: Index
 description: Index of Tutorials on the Modders Reference Website
-template: splash
+tableOfContents: false
 ---
 
 <details>
 
 <summary>Beginner Tutorials</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
-* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
-* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
+* [Custom Maps](../../../../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
+* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
 
 </details>
 
@@ -18,8 +20,11 @@ template: splash
 
 <summary>Modding Tools</summary>
 
-* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
-* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
+* [Comparing Files with WinMerge](../../../../tutorials/winmerge/), by Waffle
+* [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
+* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
 
 </details>
 
@@ -27,7 +32,7 @@ template: splash
 
 <summary>Tuning Mods</summary>
 
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
+* [Modifying Sim Appearances](../../../../tutorials/modifying-sim-appearances/), by FellowFur
 
 </details>
 
@@ -35,7 +40,7 @@ template: splash
 
 <summary>Script Mods</summary>
 
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
+* [Modifying Sim Appearances](../../../../tutorials/modifying-sim-appearances/), by FellowFur
 
 </details>
 
@@ -61,7 +66,7 @@ template: splash
 
 <summary>UI Mods</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Custom Maps](../../../../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
 
 </details>
 
@@ -75,10 +80,11 @@ template: splash
 
 <summary>Text/Image Tutorials</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
-* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
-* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
+* [Comparing Files with WinMerge](../../../../tutorials/winmerge/), by Waffle
+* [Custom Maps](../../../../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Modifying Sim Appearances](../../../../tutorials/modifying-sim-appearances/), by FellowFur
+* [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
 
 </details>
 
@@ -86,15 +92,30 @@ template: splash
 
 <summary>Video Tutorials</summary>
 
+* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+
+</details>
+
+<details>
+
+<summary>Stream of Consciousness Type Tutorials</summary>
+
+* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+
 </details>
 
 <details>
 
 <summary>All, Aplhabetical</summary>
 
-* [Custom Maps](https://thesims4moddersreference.org/tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
-* [Modifying Sim Appearances](https://thesims4moddersreference.org/tutorials/modifying-sim-appearances/), by FellowFur
-* [Scumbumbo's XML Extractor](https://thesims4moddersreference.org/tutorials/xml-extractor/), by Waffle
-* [Scumbumbo's XML File Finder](https://thesims4moddersreference.org/tutorials/xml-file-finder/), by Waffle
-* [Links to Off-Site Tutorials](https://thesims4moddersreference.org/tutorials/links-offsite/):
+* [Comparing Files with WinMerge](../../../../tutorials/winmerge/), by Waffle
+* [Custom Maps](../../../../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Modifying Sim Appearances](../../../../tutorials/modifying-sim-appearances/), by FellowFur
+* [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
+* [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
+* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+
 </details>
