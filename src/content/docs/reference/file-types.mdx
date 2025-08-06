@@ -1,14 +1,24 @@
 ---
 title: File Types
 description: Files you may come across.
+tableOfContents:
+  minHeadingLevel: 1
+  maxHeadingLevel: 4
+
 ---
 <sup><sub>A reference list compiled by Amethyst Lilac</sub></sup>
 
 While you create and look around the game's files, you'll come across many different files. Here's a brief description of some.
 
+Some may contain speculation or be vague, and may be updated later with more information.
+
 ## File Extensions
 
 These are files that you will primarily see/edit/create as a final product. These are the files that you install somewhere (or the game does).
+
+<details open>
+
+<summary>Hide</summary>
 
 ### .package
 
@@ -29,6 +39,8 @@ Most mods don't require a script, but there are some things that can't be done w
 ### .blueprint, .bpi, .hhi, .householdbinary, .rmi, .room, .sgi, .trayitem
 
 These are files that are typically found in the tray folder. Any tray item (a household, room, or lot) will be made up of multiple of these. Which ones are involved for a particular tray item varies.
+
+.blueprint and .bpi are related to lots. .hhi and .householdbinary are related to households. .rmi and .room are related to rooms. .trayitem files are used by all three.
 
 One example of when these files may be used in modding is in creating household overrides for premade sims, or creating sims to spawn in game for a mod.
 
@@ -68,11 +80,21 @@ These are files that determine what a world looks and acts like in game.
 
 One example of when a .world file is used in modding would be certain kinds of lighting overrides.
 
+</details>
+
 # Internal Files
 
 These are files that are primarily used inside another file, such as a package or a script file. They are typically not used as an end product.
 
+<details open>
+
+<summary>Hide</summary>
+
 ## Script Mod Files
+
+<details open>
+
+<summary>Hide</summary>
 
 ### .py
 
@@ -82,35 +104,65 @@ An uncompiled python file. Python files are used in script mods, but are usually
 
 A compiled python file. Python files are used in script mods, and are usually compiled and placed in a .ts4script file for use.
 
+</details>
+
 ## General Files in Packages
+
+Uncategorized or in multiple categories.
+
+<details open>
+
+<summary>Hide</summary>
+
+### Age Gender Map
+
+Appears to be a map of gender and age per species. Likely related to sim spawning.
+
+{/* ### Blend Geometry
+
+### Combined Binary Tuning
+
+### Cutout Info Table
+
+### Deformer Map */}
 
 ### DST Image
 
 May be icons, object diffuse images, normal or specular maps, or various other game images.
 
-### Animation State Machine
-
-Information about an animation.
-
-### Clip
-
-An animation.
+{/* ### Generic MTX */}
 
 ### Household Template
 
 A template file for a premade household that will appear in a new game or when spawned by the game or a mod.
 
+{/* ### Light
+
+### Lot Type Event Map */}
+
 ### Magalog
 
 A file that contains information about objects that place as a group, such as a table that places with chairs pre-attached.
 
+{/* ### Magazine Collection
+
+### Material Set
+
+### Modal Music Mapping
+
+### Model Cutout
+
+### MTX Catalog
+
+### Name Map
+
+### Object Modifiers
+
+### Path */}
+
 ### S4S Merged Package Manifest
 
 A file created by Sims 4 Studio and included in a package file when multiple package files are merged into one, listing all of the original packages and their contents. This file is essential if the package ever needs to be un-merged.
-
-### Scale Form GFX
-
-User Interface (UI) files.
 
 ### Sim Data (in a package file)
 
@@ -118,15 +170,51 @@ SimData is a file that is usually paired with a tuning file. It is required by m
 
 An example of when SimData is used is in a Buff. The UI reads the SimData to know what to display to the player, because it doesn't have access to the tuning, and the simulation reads the tuning to know what effects the buff has.
 
+{/* ### Sim Hotspot Control
+
+### Sim Info
+
+### Sim Modifier
+
+### Slot */}
+
 ### String Table
 
 String Tables are files made up of stings, which are bits of text. They hold the text you see in game.
+
+{/* ### Style
+
+### Thumbnail Cache
+
+### Thumbnail Extra 1
+
+### Thumbnail Extra 2
+
+### Timeline Events
+
+### Visual Effects
+
+### Visual Effects Instance Map
+
+### Visual Effects Merged
+
+### Water Mask
+
+### Water Mask List
+
+### Window Set */}
+
+</details>
 
 ## Tuning Mod Files
 
 Tuning files are written in XML (Extensible Markup Language).
 
 Important note: if your tuning is malformed, you will be unable to save your package. You must correct the issue before you will be able to save.
+
+<details open>
+
+<summary>Hide</summary>
 
 ### Action
 
@@ -140,47 +228,369 @@ Buffs, or moodlets, may be the visible buffs you see in game or invisible buffs.
 
 An interaction, also called an affordance, may be something that a player directs a sim to do, or something that happens on its own in the game when the right circumstances are met, or a set of things that may happen, or various other things.
 
-## Custom Content Files
+</details>
 
-### CAS Part
+## Custom Content
+
+### CAS Files
+
+<details open>
+
+<summary>Hide</summary>
+
+{/* #### Body Part Thumbnail
+
+#### Buy Build Thumbnail */}
+
+#### CAS Part
 
 Contains various flags (telling the game when it can be used and by who, among other information) and other details about CAS custom content.
 
-### Footprint
+{/* #### CAS Preset
 
-The shape and size or an object, along with various related properties.
+#### Color List */}
 
-### Geometry
+#### Geometry
 
 Contains information about the physical properties of a CAS item.
 
-### LRLE Image
+#### LRLE Image
 
 Images used as the diffuse map for a CAS item.
 
-### Model, Model LOD
+{/* #### Pelt Brush
 
-Contains information about the physical properties of a Build/Buy item.
+#### Pelt Layer
 
-### Object Catalog
+#### Pet Breed Coat Pattern Thumbnail
 
-Contains information about a specific swatch of a build/buy item, such as tags and flags.
+#### Pet Coat Pattern
 
-### Object Definition
+#### Pet Face Preset Thumbnail */}
 
-Contains information about a specific swatch of a build/buy item, such as components, linked footprint, and tuning used.
-
-### Region Map
+#### Region Map
 
 Grouped information about a CAS item's LODs.
 
-### RLE 2 Image
+#### RLE 2 Image
 
 Images for certain CAS items. Diffuse maps for items that do not use colour sliders, and shadow maps.
 
-### RLES Image
+#### RLES Image
 
 Specular maps for CAS items.
+
+{/* #### Roof
+
+#### Roof Pattern
+
+#### Roof Trim
+
+#### Room
+
+#### Sim Featured Outfit Thumbnail
+
+#### Sim Preset
+
+#### Sim Preset Thumbnail
+
+#### Skintone
+
+#### Styled Look
+
+#### Walkstyle */}
+
+</details>
+
+### Build/Buy Files
+
+<details open>
+
+<summary>Hide</summary>
+
+{/* #### Block
+
+#### Column
+
+#### Deco Trim
+
+#### Fence
+
+#### Floor
+
+#### Floor Trim */}
+
+#### Footprint
+
+The shape and size or an object, along with various related properties.
+
+{/* #### Foundation
+
+#### Fountain Trim
+
+#### Frieze
+
+#### Half Wall
+
+#### Half Wall Trim
+
+#### Ladder
+
+#### Material Definition */}
+
+#### Model, Model LOD
+
+Contains information about the physical properties of a Build/Buy item.
+
+{/* #### Modular Piece
+
+#### Modular Piece Catalog */}
+
+#### Object Catalog
+
+Contains information about a specific swatch of a build/buy item, such as tags and flags.
+
+{/* #### Object Catalog Set */}
+
+#### Object Definition
+
+Contains information about a specific swatch of a build/buy item, such as components, linked footprint, and tuning used.
+
+{/* #### Platform
+
+#### PNG Image
+
+#### Pond
+
+#### Pool Trim
+
+#### Railing
+
+#### Sculpt
+
+#### Spandrel
+
+#### Stairs
+
+#### Terrain Paint
+
+#### Terrain Tool
+
+#### Trim
+
+#### Wall
+
+#### Wall Trim */}
+
+</details>
+
+## Audio Files
+
+<details open>
+
+<summary>Hide</summary>
+
+### Ambience
+
+Related to background noise.
+
+{/* ### Audio Configuration
+
+### Audio Effects
+
+### Audio Vocals
+
+### AVI
+
+### Music Data
+
+### Sound Mix Properties
+
+### Sound Modifier Mapping
+
+### Sound Properties
+
+### Voice Effect
+
+### Voice Plugin */}
+
+</details>
+
+## Animation/Poses
+
+<details open>
+
+<summary>Hide</summary>
+
+{/* ### Animation Boundary Condition Cache
+
+### Animation Constraint Cache */}
+
+### Animation State Machine (ASM)
+
+Information about an animation.
+
+{/* ### Bone Pose */}
+
+### Clip
+
+An animation.
+
+{/* ### Clip Header
+
+### Locomotion Builder
+
+### Locomotion Config
+
+### Rig
+
+### Sync Point Schema
+
+### Track Mask */}
+
+</details>
+
+## UI Files
+
+<details open>
+
+<summary>Hide</summary>
+
+{/* ### Credits
+
+### Cursor
+
+### Font Configuration
+
+### Open Type Font
+
+### True Type Font */}
+
+### Scale Form GFX
+
+User Interface (UI) files.
+
+{/* ### UI Control Event Map
+
+### UI Event Mode Mapping */}
+
+</details>
+
+{/* ## World Files and Related
+
+<details open>
+
+<summary>Hide</summary>
+
+### Color Blended Terrain
+
+### Color Timeline Data
+
+### Household Description
+
+### Lot Description
+
+### Lot Footprint Reference
+
+### Lot Preview Thumbnail
+
+### Maxis World Pipeline 2
+
+### Plex Thumbnail
+
+### Plex Unit Mask Thumbnail
+
+### Queryable World Mask
+
+### Queryable World Mask Manifest
+
+### Region Description
+
+### Road Definition (Unused)
+
+### Sky Box Texture Data
+
+### Spawner
+
+### Terrain Blend Map
+
+### Terrain Data
+
+### Terrain Height Map
+
+### Terrain KD Tree
+
+### Terrain Mesh
+
+### Terrain Size Info
+
+### Unknown World 2
+
+### Unknown World 5
+
+### Water Manifest
+
+### Water Mask List
+
+### World Camera Info
+
+### World Camera Mesh
+
+### World Camera Mesh Reference
+
+### World File Header
+
+### World Color Timeline Map
+
+### World Conditional Data
+
+### World Data
+
+### World Description
+
+### World File Header
+
+### World Landing Strip
+
+### World Lights Info
+
+### World Lot Architecture (WLA)
+
+### World Lot Objects (WLO)
+
+### World Lot Parameter Info
+
+### World Manifest
+
+### World Manifest Reference
+
+### World Map
+
+### World Object Data
+
+### World Off Lot Mesh
+
+### World Off Lot Mesh Reference
+
+### World Road Polys
+
+### World Spawner Info
+
+### World Timeline Color
+
+### World Visual Effects Info
+
+### World Water Manifest
+
+### World Visual Effects Info
+
+### World Water Manifest
+
+### Worldmap Lot Thumbnail
+
+</details> */}
+
+</details>
 
 ---
 
