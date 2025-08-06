@@ -3,7 +3,7 @@ title: Resource Type Index
 description: List of all resources types.
 ---
 
-<sup><sub>A reference list compiled by Kalixxer</sub></sup>
+<sup><sub>A reference list compiled by Kallixer</sub></sup>
 
 ## Build Mode
 *Types related to build mode objects and architectural features.*
