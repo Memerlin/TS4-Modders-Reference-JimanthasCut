@@ -12,7 +12,8 @@ tableOfContents: false
 * [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
 * [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
 * [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
-    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](links-offsite-tutorials#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+    * [How I made the "Sell to publication increases Entrepreneur Skill" mod](links-offsite-tutorials#how-i-made-the-sell-to-publication-increases-entrepreneur-skill-mod-by-jimantha)
 
 </details>
 
@@ -23,8 +24,9 @@ tableOfContents: false
 * [Comparing Files with WinMerge](../../../../tutorials/winmerge/), by Waffle
 * [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
 * [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
-* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
+* [Links to Off-Site Tutorials](../tutorials/links-offsite-tutorials):
     * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+    * [Sims 4 Modding Debugging Tips](../tutorials/links-offsite-tutorials#sims-4-debugging-tips-by-jimantha), by Jimantha
 
 </details>
 
@@ -115,7 +117,7 @@ tableOfContents: false
 * [Modifying Sim Appearances](../../../../tutorials/modifying-sim-appearances/), by FellowFur
 * [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
 * [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
-* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
-    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite-tutorials):
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite-tutorials/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
 
 </details>
