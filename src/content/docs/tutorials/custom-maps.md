@@ -92,7 +92,7 @@ Here are my before and after maps. For the purpose of this tutorial I have simpl
 
 ## Preparing your image for import
 
-### Step7.
+### Step 7.
 
 Open **UI Texture Squasher** again. We now need to convert the edited image back into two separate images that the game can use.
 
