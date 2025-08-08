@@ -4,13 +4,15 @@ description: Files you may come across.
 tableOfContents:
   minHeadingLevel: 1
   maxHeadingLevel: 4
-
 ---
+
 <sup><sub>A reference list compiled by Amethyst Lilac</sub></sup>
 
 While you create and look around the game's files, you'll come across many different files. Here's a brief (in most cases, very brief) description of some.
 
 Some may contain speculation or be vague, and may be updated later with more information.
+
+In different circumstances, a file with a multi-word name may have spaces omitted or included (DevelopmentalMilestones or Developmental Milestones). If the only difference is spacing, they are nearly always the same file type. On this page, spaces are used for readability.
 
 ## File Extensions
 
@@ -68,7 +70,7 @@ Mods and custom content are often uploaded in compressed folders of one sort or 
 
 ### .save, .ver0, .ver1, .ver2, .ver3, .ver4
 
-These are files that are found in the saves folder in the user data folder in documents. They are the save files, with up to five backups per save slot (.ver0 to .ver4).
+These are files that are found in the saves folder in the user data folder in documents. They are the save files, with up to five backups per save slot (.ver0 to .ver4). Renamed .package files.
 
 ### .txt
 
@@ -200,9 +202,7 @@ Information about premade sims, preset outfits and uniforms, and mannequins.
 
 String Tables are files made up of stings, which are bits of text. They hold the text you see in game.
 
-{/* ### Thumbnail Cache */}
-
-{/* ### Thumbnail Extra 2
+{/* ### Thumbnail Cache
 
 ### Visual Effects
 
@@ -218,7 +218,7 @@ String Tables are files made up of stings, which are bits of text. They hold the
 
 </details>
 
-## Tuning Mod Files
+## Tuning Files
 
 Tuning files are written in XML (Extensible Markup Language).
 
@@ -228,15 +228,150 @@ Important note: if your tuning is malformed, you will be unable to save your pac
 
 <summary>Hide</summary>
 
+### Tdesc Frag
+
+### Account Rewards
+
+#### Account Reward
+
+Things that are unlocked through game events, such as the Reaper's Reward Event.
+
+### Achievement Categories
+
+#### Achievement Cat
+
+A category for player achievements.
+
+### Achievements
+
+#### Achievement
+
+A player achievement.
+
+{/* ### Achievement Collections
+
+#### Achievement Collection */}
+
+### Animations
+
+#### Animation Element, Object Animation Element
+
+Used to ask for an animation to be used, with what object, and how to end it, sometimes with other information.
+
+#### Animation Element Set
+
+A set of Animation Elements which may be used depending on posture for the same or similar interaction.
+
+#### Object Pose
+
+A static animation (a pose).
+
 ### Action
 
 Action files are loots. They the game 'do a thing' when told to by another file: give a sim a buff, spawn or destroy an object, alter a commodity, etc.
 
-### Buff
+{/* ### AnimalDeathLootActions */}
+
+#### Live Drag Loot Actions
+
+The result of live dragging an object.
+
+#### Loot Actions
+
+A list of loots (things caused by something else).
+
+#### Random Weighted Loot
+
+A list of loots that may get applied randomly with options for weighting the loot chosen.
+
+#### Scheduled Delivery Loot
+
+Scheduling a reward to arrive in the mail.
+
+#### Situation Goal Loot Actions
+
+A list of loots to add to participants if the situation's goal is completed successfully.
+
+#### Weighted Single Sim Loot Actions
+
+Loots that get added to a sim in a situation.
+
+### Aspiration Categories
+
+#### Aspiration Category
+
+The category for one or more aspirations.
+
+### Aspiration Tracks
+
+#### Aspiration Track
+
+The unifying file for an aspiration, listing the aspiration levels, whimset, primary trait, and UI data for the aspiration.
+
+### Aspirations
+
+#### Aspiration
+
+A file that contains one or more objectives to be completed. May be a single objective with no other information, or may be a full aspiration level.
+
+#### Aspiration Assignment
+
+A version of an Aspiration for a career assignment.
+
+{/* #### Aspiration Basic */}
+
+#### Aspiration Career
+
+A version of an Aspiration for a career goal.
+
+#### Aspiration Familial Trigger
+
+An aspiration that notifies someone else when a sim completes it, such as 'Have Sim's child max out any of the child skills!'
+
+#### Aspiration Gig
+
+An aspiration for a career gig.
+
+#### Aspiration Notification
+
+Currently, notifications sent situationally based on traits, such as an infant having low motives.
+
+#### Aspiration Organization Task
+
+Tracks progress in organizations, currently just for university.
+
+#### Aspiration Sim Info Panel
+
+Tracks sim stats, such as number of bathroom breaks.
+
+#### Aspiration Unfinished Business
+
+Tracks the bucket list.
+
+#### Aspiration Whim Set
+
+Tracks whim sets.
+
+#### Objectiveless Whim Set
+
+A whim set without specific objectives.
+
+#### Timed Aspiration
+
+An aspiration that expires with time, such as a resolution.
+
+{/* Zone Director Event Listener */}
+
+
+
+
+
+
+#### Buff
 
 Buffs, or moodlets, may be the visible buffs you see in game or invisible buffs. If they are visible, they're the squares that you see under a sim's portrait in the bottom left. Visible buffs usually affect mood and have descriptive text. Invisible buffs are often used to control what a sim gains or loses from a trait or situation.
 
-### Interaction
+#### Interaction
 
 An interaction, also called an affordance, may be something that a player directs a sim to do, or something that happens on its own in the game when the right circumstances are met, or a set of things that may happen, or various other things.
 
@@ -348,7 +483,7 @@ Skintones. One per swatch.
 
 A styled look.
 
-#### walkstyle
+#### Walkstyle
 
 Details of a walkstyle, similar to a Locomotion Builder.
 
@@ -390,7 +525,7 @@ The shape and size or an object, along with various related properties. Usually 
 
 Information about the material/surface of walls and floors.
 
-##@# Material Set
+#### Material Set
 
 Appears to be sets of Material Definitions.
 
@@ -406,7 +541,7 @@ Contains information about the physical properties of a Build/Buy item.
 
 Contains information about a specific swatch of a build/buy item, such as tags and flags.
 
-#### Object Catalog set
+#### Object Catalog Set
 
 The Object Catalog for a set of items that place from the catalogue together.
 
@@ -430,11 +565,13 @@ Style tags for Build/Buy mode.
 
 Terrain tools: raise/lower/smooth/flatten terrain, flatten to height, and flatten lot.
 
-### Thumbnail Extra 1
+#### Thumbnail Extra 1
 
 Related to catalogue thumbnails framing. 
 
-{/* #### Trim */}
+{/* ### Thumbnail Extra 2
+
+#### Trim */}
 
 </details>
 
@@ -528,23 +665,49 @@ Thumbnails for premade households.
 
 </details>
 
-{/* ## Save Files
+## Save Files
 
 <details open>
 
 <summary>Hide</summary>
 
+### Memorial Thumbnail
+
+Thumbnail of a sim who died in the save.
+
+### Save Game Custom Texture
+
+Pictures and paintings from the save file.
+
 ### Save Game Data
+
+Data about the save at the exact time it was saved. Contains many things, including info to identify the save point and which save chronology it's from, the account it was made on, the time it was made, what was on the notification wall, clubs, game options, custom colours from colour sliders to be shown in CAS, camera position, calendar info, sims... virtually everything that can be tracked as data.
 
 ### Save Game Household Thumbnail
 
+The household thumbnail for the last played household, as appears on the main menu.
+
+### Save Game Lot Level Thumbnail
+
+Thumbnail for a premade apartment in the save that uses the plex system (at present City Living, Eco Lifestyle, and For Rent apartments).
+
+### Save Game Lot Travel Thumbnail Mask
+
+Images that reflect which parts of a building are visible and which are hidden for apartments in the save that use the plex system (at present City Living, Eco Lifestyle, and For Rent apartments).
+
 ### Save Game Lot Thumbnail 1
 
-### Save Game Lot THumbnail 2
+Main thumbnails for lots that have been viewed in the save.
+
+### Save Game Lot Thumbnail 2
+
+Small thumbnails for lots that have been viewed in the save.
 
 ### Zone Object Data
 
-</details> */}
+Information about lots in the save, listed by world and current lot name.
+
+</details>
 
 ## UI Files
 
@@ -684,13 +847,17 @@ Neighbourhood descriptions.
 
 ### World Landing Strip
 
-### World Lights Info
+### World Lights Info */}
 
 ### World Lot Architecture (WLA)
 
+List of build items on a lot (walls, roofs, etc.).
+
 ### World Lot Objects (WLO)
 
-### World Lot Parameter Info
+List of all objects on a lot.
+
+{/* ### World Lot Parameter Info
 
 ### World Manifest
 
@@ -712,17 +879,21 @@ Description of a world map, including camera position and lot dimensions.
 
 Locations of sim spawners in neighbourhoods.
 
-{/* ### World Timeline Color */}
+### World Timeline Colour
+
+World lighting colour based on time of day.
 
 ### World Visual Effects Info
 
 Location of VFX spawners in neighbourhoods.
 
-{/* ### World Water Manifest
+{/* ### World Water Manifest */}
 
 ### World Visual Effects Info
 
-### World Water Manifest */}
+Info about visual effect placement
+
+{/* ### World Water Manifest */}
 
 ### Worldmap Lot Thumbnail
 
