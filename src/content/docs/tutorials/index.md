@@ -11,7 +11,7 @@ tableOfContents: false
 * [Custom Maps](../../../../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
 * [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
 * [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
-* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
+* [Links to Off-Site Tutorials](links-offsite-tutorials):
     * [Figuring Out Venue Stuff - Waffle Explains It All!](links-offsite-tutorials#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
     * [How I made the "Sell to publication increases Entrepreneur Skill" mod](links-offsite-tutorials#how-i-made-the-sell-to-publication-increases-entrepreneur-skill-mod-by-jimantha)
 
