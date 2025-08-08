@@ -8,7 +8,7 @@ tableOfContents:
 ---
 <sup><sub>A reference list compiled by Amethyst Lilac</sub></sup>
 
-While you create and look around the game's files, you'll come across many different files. Here's a brief description of some.
+While you create and look around the game's files, you'll come across many different files. Here's a brief (in most cases, very brief) description of some.
 
 Some may contain speculation or be vague, and may be updated later with more information.
 
@@ -40,7 +40,7 @@ Most mods don't require a script, but there are some things that can't be done w
 
 These are files that are typically found in the tray folder. Any tray item (a household, room, or lot) will be made up of multiple of these. Which ones are involved for a particular tray item varies.
 
-.blueprint and .bpi are related to lots. .hhi and .householdbinary are related to households. .rmi and .room are related to rooms. .trayitem files are used by all three.
+Blueprint (.blueprint; lot information) and Blueprint Image (.bpi; a lot's thumbnails) are related to lots. .hhi and .householdbinary are related to households. .rmi and .room are related to rooms. .trayitem files are used by all three.
 
 One example of when these files may be used in modding is in creating household overrides for premade sims, or creating sims to spawn in game for a mod.
 
@@ -116,49 +116,71 @@ Uncategorized or in multiple categories.
 
 ### Age Gender Map
 
-Appears to be a map of gender and age per species. Likely related to sim spawning.
+A table that maps the age and gender variants of sculpts and modifiers.
 
-{/* ### Blend Geometry
+Example:
+
+```
+CTYAE/F    yfheadBody_Heavy
+CTYAE/M    ymheadBody_Heavy
+P/U        puheadBody_Heavy
+I/U        iuheadBody_Heavy
+BaseName   Body_Heavy
+```
+
+When changing a Sim's age or gender in CAS or in game, this will be used to lookup the correct variant of the modifier or sculpt (if needed). The game loads these mappings with hard-coded instance numbers, so you cannot add a new AgeGenderMap, but you can override an existing one and add mappings to it.
 
 ### Combined Binary Tuning
 
-### Cutout Info Table
-
-### Deformer Map */}
+How the game stores and uses tuning, as combined files instead of loose tuning files.
 
 ### DST Image
 
 May be icons, object diffuse images, normal or specular maps, or various other game images.
 
-{/* ### Generic MTX */}
+### Generic MTX
 
-### Household Template
+Likely related to requiring a pack for something that shows up if you don't own that pack (date activities, for example).
 
-A template file for a premade household that will appear in a new game or when spawned by the game or a mod.
+### Light
 
-{/* ### Light
-
-### Lot Type Event Map */}
+Information about where and how light is used. Used in actual build/buy mode lights, but also other places.
 
 ### Magalog
 
-A file that contains information about objects that place as a group, such as a table that places with chairs pre-attached.
+A file that contains information about sets of objects. This may be build/buy items, such as a table that places with chairs pre-attached, or it may be things like a room.
 
-{/* ### Magazine Collection
+### Magazine Collection
 
-### Material Set
+A file that contains information about pre-built rooms.
 
-### Modal Music Mapping
-
-### Model Cutout
+{/* ### Modal Music Mapping
 
 ### MTX Catalog
 
-### Name Map
+### Name Map */}
 
 ### Object Modifiers
 
-### Path */}
+A list of modifiers to objects (including sims), such as surfaces, what's being carried, shoe type, terrain type, etc.
+
+### Path
+
+Routing information.
+
+### PNG Image
+
+Mainly used in magalog files, but also used for some background images and random other images.
+
+### Record Bundle
+
+Collections of files bundled together. At present, there are four: two collections of Clip Headers, one of Object Definitions and Slots, and one of Lights and Footprints.
+
+### Rig
+
+The parts of something, which other things can attach to or affect. The collection of Bones.
+
+{/* #### Room */}
 
 ### S4S Merged Package Manifest
 
@@ -170,27 +192,17 @@ SimData is a file that is usually paired with a tuning file. It is required by m
 
 An example of when SimData is used is in a Buff. The UI reads the SimData to know what to display to the player, because it doesn't have access to the tuning, and the simulation reads the tuning to know what effects the buff has.
 
-{/* ### Sim Hotspot Control
-
 ### Sim Info
 
-### Sim Modifier
-
-### Slot */}
+Information about premade sims, preset outfits and uniforms, and mannequins.
 
 ### String Table
 
 String Tables are files made up of stings, which are bits of text. They hold the text you see in game.
 
-{/* ### Style
+{/* ### Thumbnail Cache */}
 
-### Thumbnail Cache
-
-### Thumbnail Extra 1
-
-### Thumbnail Extra 2
-
-### Timeline Events
+{/* ### Thumbnail Extra 2
 
 ### Visual Effects
 
@@ -238,17 +250,31 @@ An interaction, also called an affordance, may be something that a player direct
 
 <summary>Hide</summary>
 
-{/* #### Body Part Thumbnail
+#### Blend Geometry
 
-#### Buy Build Thumbnail */}
+Used in some CAS presets.
+
+#### Body Part Thumbnail
+
+Thumbnail for a preset (body shape, nose shape, jaw shape, etc.) in CAS.
 
 #### CAS Part
 
-Contains various flags (telling the game when it can be used and by who, among other information) and other details about CAS custom content.
+Contains various flags (telling the game when it can be used and by who, among other information) and other details about a CAS item.
 
-{/* #### CAS Preset
+#### CAS Part Thumbnail
 
-#### Color List */}
+Thumbnail for a CAS item.
+
+#### CAS Preset
+
+A CAS preset -- eye shape, nose shape, body shape, etc.
+
+{/* #### Color List */}
+
+#### Deformer Map
+
+Used in body and body part shape customization (slider use). Uses UV1 in blender.
 
 #### Geometry
 
@@ -258,15 +284,25 @@ Contains information about the physical properties of a CAS item.
 
 Images used as the diffuse map for a CAS item.
 
-{/* #### Pelt Brush
+#### Pelt Brush
+
+Brushes used for painting in CAS.
 
 #### Pelt Layer
 
+Layers, patterns, and stencils for paintable items in CAS.
+
 #### Pet Breed Coat Pattern Thumbnail
+
+Thumbnails shown in CAS for pet breeds, werewolf coats, and fairy wings (paintable CAS items).
 
 #### Pet Coat Pattern
 
-#### Pet Face Preset Thumbnail */}
+Pattern information for pet breeds, werewolf coats, and fairy wings (paintable CAS items).
+
+#### Pet Face Preset Thumbnail
+
+Thumbnails shown in CAS of pets (presumably of their heads, but shows in the files as full bodies).
 
 #### Region Map
 
@@ -280,25 +316,41 @@ Images for certain CAS items. Diffuse maps for items that do not use colour slid
 
 Specular maps for CAS items.
 
-{/* #### Roof
+#### Sculpt
 
-#### Roof Pattern
-
-#### Roof Trim
-
-#### Room
+A body part shape, a CAS preset.
 
 #### Sim Featured Outfit Thumbnail
 
+Thumbnail for a styled look.
+
+#### Sim Hotspot Control
+
+Controls the location a slider connects to a sim in CAS.
+
+#### Sim Modifier
+
+CAS presets.
+
 #### Sim Preset
+
+Sim presets in CAS -- the ones that change the look of the entire sim, selected by the head for human/occult sims, and by breed for animals.
 
 #### Sim Preset Thumbnail
 
+Thumbnails for sim presets in CAS -- the ones that change the look of the entire sim, selected by the head for human/occult sims, and by breed for animals.
+
 #### Skintone
+
+Skintones. One per swatch.
 
 #### Styled Look
 
-#### Walkstyle */}
+A styled look.
+
+#### walkstyle
+
+Details of a walkstyle, similar to a Locomotion Builder.
 
 </details>
 
@@ -308,35 +360,39 @@ Specular maps for CAS items.
 
 <summary>Hide</summary>
 
-{/* #### Block
+#### Block
 
-#### Column
+Build tools, such as Basement Tool, Custom Pool Tool, and L-Shaped Deck. 
+
+#### Buy Build Thumbnail
+
+Thumbnail for a Build/Buy item.
+
+#### Column, Fence, Floor, Floor Trim, Foundation, Fountain Trim, Frieze, Half Wall, Half Wall Trim, Ladder, Platform, Pool Trim, Railing, Roof, Roof Pattern, Roof Trim, Spandrel, Stairs, Terrain Paint, Wall, Wall Trim
+
+A file for the specific object mentioned, one per swatch.
+
+#### Cutout Info Table, Model Cutout
+
+When an object cuts out part of another (a door or window in a wall, a sink in a counter), this tells the game what size and shape of hole to remove.
+
+Also used in generating thumbnails.
 
 #### Deco Trim
 
-#### Fence
-
-#### Floor
-
-#### Floor Trim */}
+A file for Seasons exterior holiday decorations (banners, bunting, garlands, etc.), one per swatch. A hidden item.
 
 #### Footprint
 
-The shape and size or an object, along with various related properties.
+The shape and size or an object, along with various related properties. Usually controls part of where an object can be placed, how close it can be to other objects, and how close sims can get to the object (including if they can walk on/through it).
 
-{/* #### Foundation
+#### Material Definition
 
-#### Fountain Trim
+Information about the material/surface of walls and floors.
 
-#### Frieze
+##@# Material Set
 
-#### Half Wall
-
-#### Half Wall Trim
-
-#### Ladder
-
-#### Material Definition */}
+Appears to be sets of Material Definitions.
 
 #### Model, Model LOD
 
@@ -350,69 +406,35 @@ Contains information about the physical properties of a Build/Buy item.
 
 Contains information about a specific swatch of a build/buy item, such as tags and flags.
 
-{/* #### Object Catalog Set */}
+#### Object Catalog set
+
+The Object Catalog for a set of items that place from the catalogue together.
 
 #### Object Definition
 
 Contains information about a specific swatch of a build/buy item, such as components, linked footprint, and tuning used.
 
-{/* #### Platform
-
-#### PNG Image
-
 #### Pond
 
-#### Pool Trim
+Pond tools (raise, lower, or remove water; fill to height).
 
-#### Railing
+#### Slot
 
-#### Sculpt
+A place designated to be where another object can be placed, whether in build mode, live mode, or through tuning such as FX.
 
-#### Spandrel
+#### Style
 
-#### Stairs
-
-#### Terrain Paint
+Style tags for Build/Buy mode.
 
 #### Terrain Tool
 
-#### Trim
+Terrain tools: raise/lower/smooth/flatten terrain, flatten to height, and flatten lot.
 
-#### Wall
+### Thumbnail Extra 1
 
-#### Wall Trim */}
+Related to catalogue thumbnails framing. 
 
-</details>
-
-## Audio Files
-
-<details open>
-
-<summary>Hide</summary>
-
-### Ambience
-
-Related to background noise.
-
-{/* ### Audio Configuration
-
-### Audio Effects
-
-### Audio Vocals
-
-### AVI
-
-### Music Data
-
-### Sound Mix Properties
-
-### Sound Modifier Mapping
-
-### Sound Properties
-
-### Voice Effect
-
-### Voice Plugin */}
+{/* #### Trim */}
 
 </details>
 
@@ -432,23 +454,97 @@ Information about an animation.
 
 {/* ### Bone Pose */}
 
-### Clip
+### Clip, Clip Header
 
 An animation.
 
-{/* ### Clip Header
-
 ### Locomotion Builder
+
+Puts animations in sequence and determines things like the overall duration.
 
 ### Locomotion Config
 
-### Rig
+A list of walkstyles (all of them, including things like stairs, turning, horses while being rode and riderless, etc.).
 
-### Sync Point Schema
+{/* ### Sync Point Schema */}
 
-### Track Mask */}
+### Timeline Events
+
+Appears to be things that happen while an animation plays, like sounds.
+
+{/* ### Track Mask */}
 
 </details>
+
+## Audio and Video Files
+
+<details open>
+
+<summary>Hide</summary>
+
+### Ambience
+
+Related to background noise.
+
+{/* ### Audio Configuration
+
+### Audio Effects
+
+### Audio Vocals */}
+
+### AVI
+
+Video files. NOT regular .avi files, but an odd format used by the game.
+
+{/* ### Music Data */}
+
+### Sound Mix Properties
+
+Sound configuration files.
+
+{/* ### Sound Modifier Mapping
+
+### Sound Properties
+
+### Voice Effect
+
+### Voice Plugin */}
+
+</details>
+
+## Household Related
+
+<details open>
+
+<summary>Hide</summary>
+
+### Household Template
+
+A template file for a premade household that will appear in a new game or when spawned by the game or a mod.
+
+### Sim Household Thumbnail
+
+Thumbnails for premade households.
+
+</details>
+
+{/* ## Save Files
+
+<details open>
+
+<summary>Hide</summary>
+
+### Save Game Data
+
+### Save Game Household Thumbnail
+
+### Save Game Lot Thumbnail 1
+
+### Save Game Lot THumbnail 2
+
+### Zone Object Data
+
+</details> */}
 
 ## UI Files
 
@@ -456,13 +552,19 @@ An animation.
 
 <summary>Hide</summary>
 
-{/* ### Credits
+### Credits
+
+As it says, the credits -- the people who made the game.
 
 ### Cursor
 
+Shockingly, these are the cursors the game uses.
+
 ### Font Configuration
 
-### Open Type Font
+Various files to display text somewhere in game, such as `I have read and accept the User Agreement and EA's Privacy and Cookie Policy.`, the Privacy and Cookie Policy itself, and button text, along with font and display configuration files.
+
+{/* ### Open Type Font
 
 ### True Type Font */}
 
@@ -476,53 +578,81 @@ User Interface (UI) files.
 
 </details>
 
-{/* ## World Files and Related
+## World Files and Related
 
 <details open>
 
 <summary>Hide</summary>
 
-### Color Blended Terrain
+{/* ### Color Blended Terrain */}
 
 ### Color Timeline Data
 
+Appears to be related to world lighting.
+
 ### Household Description
+
+The name displayed in game for a lot.
 
 ### Lot Description
 
-### Lot Footprint Reference
+Information about a lot.
+
+{/* ### Lot Footprint Reference */}
 
 ### Lot Preview Thumbnail
 
-### Maxis World Pipeline 2
+The pre-set thumbnails for lots.
+
+### Lot Type Event Map
+
+Appears to be a list of walkby groups that are valid for certain basegame venue types.
+
+{/* ### Maxis World Pipeline 2 */}
 
 ### Plex Thumbnail
 
+Thumbnails for premade apartments using the plex system (at present City Living, Eco Lifestyle, and For Rent apartments).
+
 ### Plex Unit Mask Thumbnail
 
-### Queryable World Mask
+Images that reflect which parts of a building are visible and which are hidden for premade apartments that use the plex system (at present City Living, Eco Lifestyle, and For Rent apartments).
 
-### Queryable World Mask Manifest
+{/* ### Queryable World Mask
+
+### Queryable World Mask Manifest */}
 
 ### Region Description
 
-### Road Definition (Unused)
+World descriptions.
+
+{/* ### Road Definition (Unused) */}
 
 ### Sky Box Texture Data
 
+Which texture is used where and when for which world's sky.
+
 ### Spawner
 
-### Terrain Blend Map
+Where a sim or object (such as a collectable) spawns.
+
+{/* ### Terrain Blend Map */}
 
 ### Terrain Data
 
+Appears to be which terrain textures are used in which region of which world.
+
 ### Terrain Height Map
 
-### Terrain KD Tree
+Appears to be heat maps of terrain height in the regions of the worlds.
+
+{/* ### Terrain KD Tree */}
 
 ### Terrain Mesh
 
-### Terrain Size Info
+Terrain meshes, multiple per region.
+
+{/* ### Terrain Size Info
 
 ### Unknown World 2
 
@@ -544,11 +674,13 @@ User Interface (UI) files.
 
 ### World Conditional Data
 
-### World Data
+### World Data */}
 
 ### World Description
 
-### World File Header
+Neighbourhood descriptions.
+
+{/* ### World File Header
 
 ### World Landing Strip
 
@@ -562,33 +694,41 @@ User Interface (UI) files.
 
 ### World Manifest
 
-### World Manifest Reference
+### World Manifest Reference */}
 
 ### World Map
 
-### World Object Data
+Description of a world map, including camera position and lot dimensions.
+
+{/* ### World Object Data
 
 ### World Off Lot Mesh
 
 ### World Off Lot Mesh Reference
 
-### World Road Polys
+### World Road Polys */}
 
 ### World Spawner Info
 
-### World Timeline Color
+Locations of sim spawners in neighbourhoods.
+
+{/* ### World Timeline Color */}
 
 ### World Visual Effects Info
 
-### World Water Manifest
+Location of VFX spawners in neighbourhoods.
+
+{/* ### World Water Manifest
 
 ### World Visual Effects Info
 
-### World Water Manifest
+### World Water Manifest */}
 
 ### Worldmap Lot Thumbnail
 
-</details> */}
+Default lot thumbnails.
+
+</details>
 
 </details>
 
