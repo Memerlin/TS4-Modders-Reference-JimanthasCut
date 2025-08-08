@@ -8,12 +8,12 @@ tableOfContents: false
 
 <summary>Beginner Tutorials</summary>
 
-* [Custom Maps](../../../../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
-* [Scumbumbo's XML Extractor](../../../../tutorials/xml-extractor/), by Waffle
-* [Scumbumbo's XML File Finder](../../../../tutorials/xml-file-finder/), by Waffle
-* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite-tutorials):
-    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite-tutorials#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
-    * [How I made the "Sell to publication increases Entrepreneur Skill" mod](../../../../tutorials/links-offsite-tutorials#how-i-made-the-sell-to-publication-increases-entrepreneur-skill-mod-by-jimantha)
+* <a href="../tutorials/custom-maps">Custom Maps</a>, by Alistu a.k.a. Menaceman44
+* <a href="../tutorials/xml-extractor">Scumbumbo's XML Extractor</a> by Waffle
+* <a href="../tutorials/xml-file-finder">Scumbumbo's XML File Finder</a>, by Waffle
+* <a href="../tutorials/links-offsite-tutorials">Links to Off-Site Tutorials:</a>
+    * <a href="../tutorials/links-offsite-tutorials#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle">Figuring Out Venue Stuff - Waffle Explains It All!</a>, by Waffle
+    * <a href="../tutorials/links-offsite-tutorials#how-i-made-the-sell-to-publication-increases-entrepreneur-skill-mod-by-jimantha">How I made the "Sell to publication increases Entrepreneur Skill" mod</a>, by Jimantha
 
 </details>
 
