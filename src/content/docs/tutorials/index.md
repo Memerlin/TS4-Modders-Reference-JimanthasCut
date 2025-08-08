@@ -94,8 +94,8 @@ tableOfContents: false
 
 <summary>Video Tutorials</summary>
 
-* [Links to Off-Site Tutorials](../../../../tutorials/links-offsite/):
-    * [Figuring Out Venue Stuff - Waffle Explains It All!](../../../../tutorials/links-offsite/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
+* [Links to Off-Site Tutorials](../tutorials/links-offsite-tutorials):
+    * [Figuring Out Venue Stuff - Waffle Explains It All!](/tutorials/links-offsite-tutorials/#figuring-out-venue-stuff---waffle-explains-it-all-by-waffle), by Waffle
 
 </details>
 
