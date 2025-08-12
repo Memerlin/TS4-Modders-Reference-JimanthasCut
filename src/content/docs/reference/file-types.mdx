@@ -222,25 +222,21 @@ String Tables are files made up of stings, which are bits of text. They hold the
 
 Tuning files are written in XML (Extensible Markup Language).
 
+There are multiple ways to divide tuning files up. Module is used here.
+
+There are *many* different tuning files. Not all are listed here.
+
 Important note: if your tuning is malformed, you will be unable to save your package. You must correct the issue before you will be able to save.
 
 <details open>
 
 <summary>Hide</summary>
 
-### Tdesc Frag
-
-### Account Rewards
+{/* ### Account Rewards
 
 #### Account Reward
 
 Things that are unlocked through game events, such as the Reaper's Reward Event.
-
-### Achievement Categories
-
-#### Achievement Cat
-
-A category for player achievements.
 
 ### Achievements
 
@@ -248,9 +244,15 @@ A category for player achievements.
 
 A player achievement.
 
-{/* ### Achievement Collections
+#### Achievement Cat
 
-#### Achievement Collection */}
+A category for player achievements.
+
+#### Achievement Collection
+
+### Animals
+
+#### AnimalDeathLootActions */}
 
 ### Animations
 
@@ -265,48 +267,6 @@ A set of Animation Elements which may be used depending on posture for the same 
 #### Object Pose
 
 A static animation (a pose).
-
-### Action
-
-Action files are loots. They the game 'do a thing' when told to by another file: give a sim a buff, spawn or destroy an object, alter a commodity, etc.
-
-{/* ### AnimalDeathLootActions */}
-
-#### Live Drag Loot Actions
-
-The result of live dragging an object.
-
-#### Loot Actions
-
-A list of loots (things caused by something else).
-
-#### Random Weighted Loot
-
-A list of loots that may get applied randomly with options for weighting the loot chosen.
-
-#### Scheduled Delivery Loot
-
-Scheduling a reward to arrive in the mail.
-
-#### Situation Goal Loot Actions
-
-A list of loots to add to participants if the situation's goal is completed successfully.
-
-#### Weighted Single Sim Loot Actions
-
-Loots that get added to a sim in a situation.
-
-### Aspiration Categories
-
-#### Aspiration Category
-
-The category for one or more aspirations.
-
-### Aspiration Tracks
-
-#### Aspiration Track
-
-The unifying file for an aspiration, listing the aspiration levels, whimset, primary trait, and UI data for the aspiration.
 
 ### Aspirations
 
@@ -323,6 +283,10 @@ A version of an Aspiration for a career assignment.
 #### Aspiration Career
 
 A version of an Aspiration for a career goal.
+
+#### Aspiration Category
+
+A category for one or more aspirations.
 
 #### Aspiration Familial Trigger
 
@@ -344,9 +308,121 @@ Tracks progress in organizations, currently just for university.
 
 Tracks sim stats, such as number of bathroom breaks.
 
+#### Aspiration Track
+
+The unifying file for an aspiration, listing the aspiration levels, whimset, primary trait, and UI data for the aspiration.
+
 #### Aspiration Unfinished Business
 
 Tracks the bucket list.
+
+#### Timed Aspiration
+
+An aspiration that expires with time, such as a resolution.
+
+{/* Zone Director Event Listener */}
+
+### Away Actions
+
+#### Away Action
+
+Something a sim can do while not on the active lot, such as filling a need.
+
+### Balloons
+
+#### Balloon Category
+
+Tuning for thought and speech balloons.
+
+{/* ### Breeds
+
+#### Breed
+
+Tuning for pet breeds */}
+
+### Braodcasters
+
+#### Broadcaster
+
+Affects sims within the defined constraint relative to whatever has the broadcaster.
+
+{/* #### Broadcaster Environment Score
+
+Combines all environment broadcasters.
+
+### Bucks
+
+#### Bucks Perk
+
+Tuning for a purchased perk (club boost, retail perk, occult skill, etc.). */}
+
+### Buffs
+
+#### Buff
+
+Buffs, or moodlets, may be the visible buffs you see in game or invisible buffs. If they are visible, they're the squares that you see under a sim's portrait in the bottom left. Visible buffs usually affect mood and have descriptive text. Invisible buffs are often used to control what a sim gains or loses from a trait or situation.
+
+#### Burnout Buff
+
+Buff added during burnout.
+
+{/* #### Clothing Buff */}
+
+### Business
+
+#### Business
+
+Data about a business type.
+
+#### Business Rule
+
+Residential Rental apartment rule.
+
+### Careers
+
+#### Career Tone
+
+Away Actions that can be chosen for a sim to do while at school or work (non-active).
+
+### Clubs
+
+#### Broadcaster Club Rule
+
+A broadcaster that affects how sims react to club members following/breaking the club rules.
+
+### Delivery
+
+#### Scheduled Delivery Loot
+
+Scheduling a reward to arrive in the mail.
+
+### Live Drag
+
+#### Live Drag Loot Actions
+
+The result of live dragging an object.
+
+### Interactions
+
+#### Loot Actions
+
+A list of loots (things caused by something else).
+
+#### Random Weighted Loot
+
+A list of loots that may get applied randomly with options for weighting the loot chosen.
+
+#### Weighted Single Sim Loot Actions
+
+Loots that get added to a sim in a situation.
+
+### Situations
+
+#### Situation Goal Loot Actions
+
+A list of loots to add to participants if the situation's goal is completed successfully.
+
+### Whims
 
 #### Aspiration Whim Set
 
@@ -356,24 +432,7 @@ Tracks whim sets.
 
 A whim set without specific objectives.
 
-#### Timed Aspiration
-
-An aspiration that expires with time, such as a resolution.
-
-{/* Zone Director Event Listener */}
-
-
-
-
-
-
-#### Buff
-
-Buffs, or moodlets, may be the visible buffs you see in game or invisible buffs. If they are visible, they're the squares that you see under a sim's portrait in the bottom left. Visible buffs usually affect mood and have descriptive text. Invisible buffs are often used to control what a sim gains or loses from a trait or situation.
-
-#### Interaction
-
-An interaction, also called an affordance, may be something that a player directs a sim to do, or something that happens on its own in the game when the right circumstances are met, or a set of things that may happen, or various other things.
+{/* #### Tdesc Frag */}
 
 </details>
 
