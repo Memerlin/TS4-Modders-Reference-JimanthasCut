@@ -20,7 +20,7 @@ This guide will go over the various menus and buttons at the top of [Sims 4 Stud
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 Not available on Mac.
 
@@ -36,7 +36,7 @@ Next to the house is a paint palette. This is a drop-down menu that lets you pic
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 The File menu has four options:
 
@@ -53,7 +53,7 @@ The File menu has four options:
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 ![The Settings menu of S4S, open to the General tab](~/assets/s4s-settings-general-amethyst.png)
 
@@ -81,7 +81,7 @@ The UI tab has options to toggle on and off various confirmation messages, warni
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 ![The Tools menu of S4S, with the options listed below. The Modding sub-menu is open to the right.](~/assets/s4s-tools-modding-amethyst.png)
 
@@ -89,7 +89,7 @@ The UI tab has options to toggle on and off various confirmation messages, warni
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 The first option in the Tools menu is Extract Tuning... If you click it, S4S will begin processing combined tuning, and when that completes, a new window will open.
 
@@ -119,7 +119,7 @@ At the bottom, there are four check boxes and two buttons.
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called Game File Cruiser. You can use this to browse through the game's files.
 
@@ -141,7 +141,7 @@ Once you have your list of files, you can select one by clicking on it, and it w
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called String Table Lookup. You can use this to browse through the game's strings.
 
@@ -159,7 +159,7 @@ Then the strings are displayed in three columns: language, key, and text.
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called Hash Generator. You can use this to hash various things that you need hashed.
 
@@ -177,7 +177,7 @@ At the bottom is a check box to force the hashing to be high bit.
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called Color Palette. You can use this to save colour palettes for custom content and to apply color palette tags and swatch thumbnails.
 
@@ -207,7 +207,7 @@ This button will delete the localthumbcache.package file from your Documents > E
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 Modding is a sub menu with multiple options that are useful to creators.
 
@@ -285,7 +285,7 @@ This will fix the currently open file for a preset that cause toddlers to have d
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 Generate List is a sub menu with multiple options to create lists that are useful to creators.
 
@@ -321,7 +321,7 @@ Will export a set of files, one per tag, that list all game items that use that 
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 ![The Tools menu of S4S, with the Generate List sub-menu open to the right, with the options listed below.](~/assets/s4s-browse-content-amethyst.png)
 
@@ -337,7 +337,7 @@ Once you pick a category, it will bring up a window that you can scroll through 
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 #### Export All
 
@@ -355,7 +355,7 @@ Imports all meshes and diffuse maps (main texture) into the currently selected c
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 ![The Content Management menu of S4S, with the options listed below. The Troubleshooting sub-menu is open to the right.](~/assets/s4s-content-management-amethyst.png)
 
@@ -397,7 +397,7 @@ This will search the folder you select to check for any objects with more than E
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 ![The Help menu of S4S, with the options listed below. The Cheats sub-menu is open to the right.](~/assets/s4s-tools-modding-amethyst.png)
 

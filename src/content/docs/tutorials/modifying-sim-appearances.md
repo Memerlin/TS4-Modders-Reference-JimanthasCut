@@ -65,7 +65,7 @@ For the following examples, the variable `new_part_id` is the id of the part you
 
 For each part you want to add, you'll need to create an individual modifier for it. There are separate functions for each of the `set`, `remove`, `replace`, and `randomize` modifiers, this one is the Set. You can pass in arguments to set all the same properties the tuning method has:
 
-```
+```js
 from buffs.appearance_modifier.appearance_modifier import AppearanceModifier, AppearanceModifierPriority
 
 modifier = AppearanceModifier.SetCASPart(cas_part=new_part_id, update_genetics=True)
@@ -73,7 +73,7 @@ modifier = AppearanceModifier.SetCASPart(cas_part=new_part_id, update_genetics=T
 
 Then you need to apply each modifier to the sim. This function applies them all permanently, which is preferred in script since it won't time itself out if not connected to a buff. There are non-permanent functions, but I'm not familiar with them. Note that it takes a list of modifiers, not just one. The other arguments like you set the additional_flags and priority properties of the modifiers. You can also give the modifier a guid for reference later.
 
-```
+```js
 from cas.cas import OutfitOverrideOptionFlags
 
 sim_info.appearance_tracker.apply_permanent_appearance_modifiers(modifier_list, guid=0, priority=AppearanceModifierPriority.INVALID, apply_to_all_outfits=True, additional_flags=OutfitOverrideOptionFlags.OVERRIDE_ALL_OUTFITS)
@@ -91,7 +91,7 @@ For the following examples, `new_part_id` is the id of part you are applying to 
 
 First, you'll need to know the Body Type for each part you're applying (or removing, or replacing). If you just have a list of parts to add, getting a parallel list of Body Types for each part is simple:
 
-```
+```js
 from cas.cas import get_caspart_bodytype
 
 new_part_body_types = [get_caspart_bodytype(new_part_id) for new_part_id in new_part_ids]
@@ -99,7 +99,7 @@ new_part_body_types = [get_caspart_bodytype(new_part_id) for new_part_id in new_
 
 Next, you'll need to get the sim's internal outfit data to start modifying it. This will give you a list of each outfit the sim has.
 
-```
+```js
 from protocolbuffers import Outfits_pb2, S4Common_pb2
 
 outfits_msg = Outfits_pb2.OutfitList()
@@ -129,7 +129,7 @@ It also might be useful to use `list(sim_info.get_all_outfit_entries())`, it'll 
 
 Once you have an outfit to edit, you need to get the actual parts info from it. Internally, an outfit looks something like this:
 
-```
+```js
 "outfit_id": "0x0495108BA18C002B",
 "parts": {
     "ids": [
@@ -206,7 +206,7 @@ When we access them, all the Hexadecimal strings will just be actual numbers, an
 
 Now, let's actually access the data and start editing it.
 
-```
+```js
 target_outfit_part_ids = list(outfit.parts.ids)
 target_outfit_body_types = list(outfit.body_types_list.body_types)
 target_outfit_color_shifts = list(outfit.part_shifts.color_shift)
@@ -216,7 +216,7 @@ target_outfit_layer_ids = list(outfit.layer_ids.layer_id)
 
 If you're adding a part and a part with the same Body Type already exists, you can just swap the part_id out. Otherwise you'll have to add a new `part_id`, body type, etc.
 
-```
+```js
 import bisect
 
 if new_part_body_type in target_outfit_body_types:
@@ -237,7 +237,7 @@ else:
 
 Similarly, if you want to remove a part or Body Type, make sure it exists and then just delete that entry from each parallel list.
 
-```
+```js
 if delete_body_type in target_outfit_body_types:
     outfit_part_index = target_outfit_body_types.index(delete_body_type)
     del target_outfit_part_ids[outfit_part_index]
@@ -251,7 +251,7 @@ if delete_body_type in target_outfit_body_types:
 
 Finally, we need to save our modified outfit data back into the game.
 
-```
+```js
 outfit.parts = S4Common_pb2.IdList()
 outfit.parts.ids.extend(target_outfit_part_ids)
 
@@ -276,7 +276,7 @@ I've marked which Body Types are genetic under the 'Body Types List' in the 'Not
 
 Like before, start by parsing the genetic info.
 
-```
+```js
 genetic_msg = Outfits_pb2.GeneticData()
 genetic_msg.ParseFromString(sim_info._base.genetic_data)
 genetic_parts = list(genetic_msg.parts_list.parts)
@@ -284,7 +284,7 @@ genetic_parts = list(genetic_msg.parts_list.parts)
 
 Genetics parts use a completely different formatting from outfit parts, here's an example of what some of genetic_msg look like internally:
 
-```
+```js
 "sculpts_and_mods_attr": "Cjyxx/vyjNCzro8B17yg/dCUud+6AaO",
 "physique": "0.000,0.630,0.526,0.000,0.000,0.000,0.000,0.000,0.000,",
 "voice_pitch": -0.08,
@@ -337,7 +337,7 @@ Genetics parts use a completely different formatting from outfit parts, here's a
 
 The principle is the same as with the outfit parts, if you want to add a part for a Body Type your sim already has, just change the ID, otherwise create a new part. I personally find it convenient to extract all the Body Types to make the logic simpler:
 
-```
+```js
 existing_body_types = [part.body_type for part in genetic_parts]
 
 if new_part_body_type in existing_body_types:
@@ -359,7 +359,7 @@ else:
 
 And deleting is again relatively simple, just be careful again to only delete parts that don't have an default 'blank' version.
 
-```
+```js
 if delete_body_type in existing_body_types:
     genetic_part_index = existing_body_types.index(delete_body_type)
     del genetic_parts[genetic_part_index]
@@ -367,13 +367,13 @@ if delete_body_type in existing_body_types:
 
 Finally, save the modified genetic info:
 
-```
+```js
 sim_info._base.genetic_data = genetic_msg.SerializeToString()
 ```
 
 Now all the part editing is done! The last step is just to let the game know you've changed the sim's outfit and it should update their appearance in game with the changes.
 
-```
+```js
 sim_info.resend_outfits()
 ```
 
@@ -405,13 +405,13 @@ First, you need to know the skintone's ID, which uniquely identifies it. If you 
 
 Once you have the skintone id (refered to here as the variable `new_skintone_id`), you can literally just set it.
 
-```
+```js
 sim_info.skin_tone = new_skintone_id
 ```
 
 You can also set the tone shift if you know want it to be, otherwise just setting it to 0 is fine.
 
-```
+```js
 sim_info.skin_tone_val_shift = 0.0
 ```
 
@@ -429,7 +429,7 @@ First you need to know the sculpt's ID, which uniquely identifies it. Note here 
 
 Next you'll need to parse the list of sculpts the sim currently has:
 
-```
+```js
 appearance_attributes = PersistenceBlobs_pb2.BlobSimFacialCustomizationData()
 appearance_attributes.ParseFromString(sim_info.facial_attributes)
 current_sculpts = list(appearance_attributes.sculpts)
@@ -439,7 +439,7 @@ That gives just a direct list of the ids of every sculpt currently applied to th
 
 To make this easier, I recommend tracking what type of sculpt your sculpt is, and then use that type to pick from a dict of vanilla sculpts, and filtering anything in that list out of your sims sculpts before applying your sculpt. You can skip this but it could cause unexpected behaviors. I've including in the 'Notes' a 'Vanilla Sculpts Dict' that includes all the vanilla sculpts that you can use.
 
-```
+```js
 new_sculpt_type = 'chin'
 
 if new_sculpt_type in vanilla_sculpts:
@@ -448,13 +448,13 @@ if new_sculpt_type in vanilla_sculpts:
 
 With that done, you can just add your sculpt:
 
-```
+```js
 filtered_sculpts.append(new_sculpt_id)
 ```
 
 Now save the updated list back to the game. Due to the data structure the sculpts are saved it, we can't easily remove a specific sculpt from the internal list, or replace it directly with our new list, so the easiest method is just to clear the internal list and add our new list to the now empty internal list.
 
-```
+```js
 del appearance_attributes.sculpts[:]
 appearance_attributes.sculpts.extend(filtered_sculpts)
 sim_info.facial_attributes = appearance_attributes.SerializeToString()
@@ -462,7 +462,7 @@ sim_info.facial_attributes = appearance_attributes.SerializeToString()
 
 Finally, tell the game to instantly update the sim's in-game appearance with their new appearance data.
 
-```
+```js
 sim_info.resend_facial_attributes()
 ```
 
@@ -486,7 +486,7 @@ These are all the mouse movement you make on sims to adjust their appearances. I
 
 These are just the Fit and Fat sliders next to your sims, they can be easily edited directly.
 
-```
+```js
 sim_info.fit = new_fitness_level
 sim_info.fat = new_fatness_level
 ```
@@ -507,7 +507,7 @@ Basically, the game keeps track of 1 `sim_info` for the sim's current form, plus
 
 I recommend keeping track of all the `sim_infos` for forms you want to edit, and then just looping through them, like so:
 
-```
+```js
 target_infos = # get editable infos here
 
 for sim_info in target_infos:
@@ -516,25 +516,25 @@ for sim_info in target_infos:
 
 For getting the occult forms, there's several important methods to use. This gets form the sim is currently in, returning a **single** value from the `OccultType` enum.
 
-```
+```js
 current_occult_type = sim_info.occult_tracker.get_current_occult_types()
 ```
 
 This method return `True/False` depending on if a sim has an occult type. Note that not all occult type have occult forms.
 
-```
+```js
 sim_info.occult_tracker.has_occult_type(OccultType.WITCH)
 ```
 
 This method returns the actual occult form `sim_info` for a given occult type:
 
-```
+```js
 sim_info.occult_tracker.get_occult_sim_info(OccultType.VAMPIRE)
 ```
 
 As an example, here's how you could get all the infos you need if you wanted to edit only the werewolf form of sims
 
-```
+```js
 from sims.occult.occult_enums import OccultType
 
 target_infos = []
@@ -551,7 +551,7 @@ if sim_info.occult_tracker.has_occult_type(OccultType.WEREWOLF):
 
 Here's another example, to edit all the forms of mermaid sims
 
-```
+```js
 target_infos = []
 
 # Make sure sim is a mermaid
@@ -576,7 +576,7 @@ A final note, the `sim_infos` gotten from `get_occult_sim_info` are **not** full
 
 Plant sims will not be immediately affected by any appearance changes, made from script or from tuning. I'm not sure why. Any changes you make will happen, but won't be visible until the sim stops being a plant sim. The best workaround I've found for this is to just briefly make them not a plantsim after you're done making your changes. This will reset the buff timer and needs, so be careful.
 
-```
+```js
 import services
 from sims4.resources import Types
 
@@ -602,7 +602,7 @@ If you're going to change a sim's hair, you probably want to match their current
 
 First, get a representative outfit to grab the sim's hair color from. Since all outfits should use the same hair color, I just pick one. Then get the tags for that outfit, filtering to only get tags from the sim's hair.
 
-```
+```js
 from sims.outfits.outfit_enums import BodyType
 
 (outfit_category, outfit_index) = list(sim_info.get_all_outfit_entries())[0]
@@ -611,7 +611,7 @@ hair_tags = list(get_tags_from_outfit(sim_info._base, outfit_category, outfit_in
 
 Then you need to see which hair color tag is in the tags list. The tag numbers don't make sense, so I'll provide them here, in the order they appear in CAS:
 
-```
+```js
 hair_colors = {
     2528: "NEUTRAL_BLACK",
     131: "BLACK",
@@ -652,7 +652,7 @@ for hair_color in hair_colors.keys():
 
 To make sure you're applying the correct parts, you'll probably want to know what the sim's gender, frame, and style preferences are. These are pretty easy to obtain:
 
-```
+```js
 import services
 from sims4.resources import Types
 from sims.sim_info_types import Gender
@@ -690,7 +690,7 @@ def get_gender_tags(sim_info):
 
 You may need to know a sim's age to apply the correct parts. For this just get their age and compare it to the Age enum:
 
-```
+```js
 from sims.sim_info_types import Age
 
 if sim_info.age == Age.TEEN:
@@ -715,7 +715,7 @@ Markers:<br>
 &nbsp;&nbsp; ^ = A **growth** body type, it can be used as a growth part<br>
 &nbsp;&nbsp; ~ = A body type that should **never be removed**, always substitute it for a 'blank' part
 
-```
+```js
 NONE = 0
 HAT = 1
 HAIR = 2 *~ # Despite being genetic, hair can be different in different outfits if that outfit's match_hair_style attribute is false.
@@ -841,7 +841,7 @@ UNUSED = 112
 
 Use these to see if a sim has any sculpts that need to be removed when adding yours:
 
-```
+```js
 vanilla_sculpts = {
     "chin": [117692097307221872, 1438038647623687400, 1438038647623687404, 2297992739914861240, 2558726282824493165, 2660230991275541721, 2898984971974438224, 2898984971974438226, 2898984971974438230, 2898984971974438231, 2898984971974438234, 2898984971974438235, 2898992668555835761, 2961585556583616931, 2961585556583616935, 3190611621388663303, 3925418774101364443, 4301422848605443192, 4301422848605443195, 4332180867297008160, 4332180867297008163, 5025015685225125297, 5025015685225125298, 5360166786821062476, 5360166786821062479, 5535018121905246717, 5535018121905246718, 5784550092563161389, 6982312531431875427, 6982312531431875431, 6982312531431875438, 6982312531431875439, 6982313630943503673, 6982322427036529304, 7062968458617826185, 7308323871249907877, 7581611612133458742, 7899827251050373029, 7899827251050373030, 8243651520970184946, 8372833322794741838, 8563412084251004794, 8563412084251004798, 8839489795197666173, 8839489795197666174, 9852811741130565368, 9852811741130565371, 10064004328033505394, 10330358697894536113, 10330358697894536114, 10331272775345222773, 10331272775345222774, 10365449816364155705, 10365449816364155706, 10378310597421793703, 11867418350232785849, 11867418350232785850, 12365099576978437174, 12427324639630435858, 12427325739142064096, 12427325739142064100, 12427325739142064108, 12427325739142064109, 12427333435723461507, 12533701423956997602, 12533701423956997603, 12533701423956997605, 12533701423956997607, 12533701423956997614, 12533701423956997615, 12533711319561651480, 12924250253825214257, 12924250253825214258, 13120774838270434702, 13759634936619347528, 13759634936619347531, 14020054972589786992, 14020054972589786995, 14744757478812188986, 15025940610436408359, 15103223933728929825, 15103223933728929826, 16307676186282117263],
     "ear": [62168790478451008, 868258496292115654, 1134838611062166580, 1449277173737049436, 1514966768795050819, 2296589626869061925, 2346105232467418973, 2362172328730911872, 2708300619047110758, 3323230150645375198, 4976810773657562396, 5754056021135194814, 6800609332098539644, 8331015431018670122, 9332358256906476792, 9552856982167370268, 11181875726695239450, 12617304263478911608, 13056491412561988595, 14920139386521715666, 15780762292721114726, 16279455045538566271, 16715245800433173918, 17251909202474675796, 17522448945014517463, 18411646883143309513],
