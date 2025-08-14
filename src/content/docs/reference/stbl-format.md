@@ -11,7 +11,7 @@ The format is a key-value store used to store all the game strings.
 
 ## Format Specification
 
-```js
+```python
 - Binary
 - Little Endian
 

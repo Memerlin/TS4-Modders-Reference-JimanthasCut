@@ -11,7 +11,7 @@ The format consists of a series of commands mixed with raw data.
 
 ## Format Specification
 
-```js
+```python
 - Binary
 - Big Endian
 
