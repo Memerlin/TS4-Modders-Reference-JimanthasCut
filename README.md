@@ -1,4 +1,4 @@
-# The Sims 4 Modders Reference Website
+# [The Sims 4 Modders Reference Website](https://thesims4moddersreference.org)
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
