@@ -1,10 +1,12 @@
 ---
 title: How to contribute to this site
 description: A tutorial on how to contribute to this site
-tableOfContents: false
+tableOfContents: true
 ---
 
 <sup><sub> A tutorial by Jimantha</sup><sub>
+
+To Do: Write the "tutorial on website" section, fix images, fix formatting
 
 ## Welcome!
 
@@ -17,14 +19,16 @@ Feel free to skim through the site, go back and forth through the index, or reac
 You can either send them to amethystliliac or Jimantha* (that's me! Hello!), or, if you want to do it yourself, you need to make your own fork of [The Modders Reference](https://github.com/Llama-Logic/TS4-Modders-Reference) GitHub repository, and then a pull request.
 
 * I can't personally approve changes or update the website, but I can do pull requests, and I don't mind helping out. This means that, even if I make the pull request, it doesn't mean it'll be accepted or merged instantly, or at all. I'm a volunteer, just like you!
-# What's GitHub and why do you use it? 
+
+## What's GitHub and why do you use it? 
 
 GitHub is a website that allows people to upload their code, have control version, and makes it easy for others to contribute their own code to the project. You can also see people's projects and learn from them if you'd like!
 
 The Modders Reference uses it so you can propose your tutorials and help building the website. If you have tutorials in other places, you don't really need to know programming to add them.
 
 You can also make secret/private repos that are only accessible to the people you trust.
-# Repository? Fork? Pull? What are these things?
+
+### Repository? Fork? Pull? What are these things?
 
 Frankk wrote an excellent explanation:
 
@@ -36,7 +40,7 @@ forks are when you clone someone else’s repo and make your own version of it
 
 branches are timelines in the same universe while forks are a different universe all together."
 
-## I still don't get it...
+### I still don't get it...
 
 A "repository" is the place where your code is hosted!
 
@@ -46,25 +50,29 @@ A "fork" is your own version of your code. Let's use the [TS4-Modders-Reference 
 
 Any changes I make in my own fork are in my machine only, and won't be a part of the actual website *unless* I make a pull request, and said pull request is accepted and merged with the original repo.
 
-# What's the difference between a "fork" and a "branch"?
+### What's the difference between a "fork" and a "branch"?
 
 A branch is made in the original repo. A fork is a different repo.
 
 Only people who have specific permissions on a repo can make new branches, make pull requests and make changes. You don't need these permissions to make a fork. But you can still use these forks to contribute to said repo!
-# What's a pull request? 
+
+### What's a pull request? 
 
 A pull request is a way to tell the owner of the repo on GitHub "Hey, I made these changes! Do you want to make them part of your project?"
 
 If you want to know more, here's the [Git documentation](https://git-scm.com/doc). I understand it's a lot for a first timer, so I'll cover *only* what you need to know about Git to contribute to this website.
-# Why do I have to make a fork? Why can't I make my own branch directly in the repo?
+
+### Why do I have to make a fork? Why can't I make my own branch directly in the repo?
 
 Because you're not authorized to change or edit the original repo in any way, shape or form. Neither am I. This is for security, and to prevent anyone from griefing the website!
-# I don't know how to use the command console
+
+### I don't know how to use the command console
 
 Don't worry! GitHub Desktop exists! [And you can download it here](https://desktop.github.com/download).
 
 Be warned, you'll have to use the console later. Just a little, so you can install some things you need, and test your changes. It's literally three commands and that's it.
-# I have GitHub Desktop. Now what?
+
+## I have GitHub Desktop. Now what?
 
 We're going to need GitHub Desktop, a GitHub account, and an IDE. If you don't know what an IDE is, or you don't know which one to get, just use Visual Studio Code. Is the one I use.
 
@@ -83,7 +91,8 @@ When it asks you what do you want to do with this fork, put "To contribute to th
 This is the part where it should ask you what to name your fork. Give it a descriptive name! And avoid cussing in its title.
 
 Now that we have our own fork, we can click on the "Open in Visual Studio Code" button, and then you'll see all the files that build the Modders Reference Website. Feel free to check them out, change them, break them, experiment, learn how it works! You'll have a blast.
-# How do I add a link to a tutorial?
+
+## How do I add a link to a tutorial?
 
 The big advantage about Astro is that it uses markdown, and markdown is very friendly since you don't need to know how to program to write your tutorials. If you use discord or Obsidian, you're already familiar with markdown. If you're still unsure of how it works, check the documentation here.
 
@@ -91,7 +100,7 @@ Take a look at the files in the repo. There's many folders. There are two files 
 
 Let's tackle "links-offsite-tutorials.md" first.
 
-## links-offsite-tutorials.md
+### links-offsite-tutorials.md
 
 Here, you'll see we order the tutorials alphabetically. This is NOT done automatically at the time of writing this, so please write it in the correct place.
 
@@ -114,7 +123,8 @@ And in the website, that will look like this:
 ![[Pasted image 20250814204853.png]]
 
 If you want to know why it works like this, please check out [[GitHub tutorial brainstorm#Why does THAT work? (Markdown explanation)]].
-## index.md
+
+### index.md
 
 Here, you'll see that the `<summary>Beginner Tutorials</summary>` matches the menu you see on [The Tutorials Index](https://thesims4moddersreference.org/tutorials). And like "Beginner Tutorials", there are other menus like "Modding Tools, Tuning Mods", etc. After identifying where your tutorial would be best suited (it can be in multiple menus!), go to index.md in Visual Studio Code and look for the menu.
 
@@ -153,11 +163,12 @@ This time, instead of linking to a different website, we're linking to something
 This is not only important for this website, but it's also important for making your own websites, if that's something you'd like to experiment with!
 
 We also use the `#` to create bookmarks within a website. This is so you can go to a section of a site quicker, instead of scrolling for an undetermined period of time, looking for a specific section. This is especially useful for long sites that have a lot of content.
-# How do I write a tutorial directly on the site?
+
+## How do I write a tutorial directly on the site?
 
 Fun fact, I'm writing this as I'm learning to do this myself.
 
-# I want to add my biography to the contributors page, or I want to change it
+## I want to add my biography to the contributors page, or I want to change it
 
 This is a piece of cake once you did everything else!
 
@@ -181,7 +192,8 @@ I'm going to be honest, I have no idea *why* or *how* this works, but it looks n
 
 ![[Pasted image 20250814212741.png]]
 Note: You can get the icons from [this site](https://starlight.astro.build/reference/icons).
-# How do I see my changes? 
+
+## How do I see my changes? 
 
 Remember I told you you'll have to use the console briefly? Yeah, this is it!
 
@@ -205,13 +217,13 @@ If everything is working, and just to be safe, please go back to Visual Studio C
 Is it working? Great! Keep reading for instructions on how to make the pull request.
 
 You had an error? Please contact me on discord!
-# Everything works perfectly! How to I make a pull request? 
 
-<!-- TODO: Finish writing this after I finished actually writing the tutorial in the website-->
+## How to I make a pull request? 
+
+TODO: Finish writing this after I finished actually writing the tutorial in the website
 
 
-
-# What's next? 
+## What's next? 
 
 You wait! GitHub should give you a notification and an email once your pull request gets merged. Or if it has comments requesting changes. 
 
