@@ -9,6 +9,7 @@ tableOfContents: false
 <summary>Beginner Tutorials</summary>
 
 * [Custom Maps](../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Fixing CC For New Occults](../tutorials/new-occult-fix), by Amethyst Lilac
 * [Scumbumbo's XML Extractor](../tutorials/xml-extractor/), by Waffle
 * [Scumbumbo's XML File Finder](../tutorials/xml-file-finder/), by Waffle
 * [Links to Off-Site Tutorials](../tutorials/links-offsite-tutorials):
@@ -58,6 +59,8 @@ tableOfContents: false
 
 <summary>CAS</summary>
 
+* [Fixing CC For New Occults](../tutorials/new-occult-fix), by Amethyst Lilac
+
 </details>
 
 <details>
@@ -88,6 +91,7 @@ tableOfContents: false
 
 * [Comparing Files with WinMerge](../tutorials/winmerge/), by Waffle
 * [Custom Maps](../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Fixing CC For New Occults](../tutorials/new-occult-fix), by Amethyst Lilac
 * [Modifying Sim Appearances](../tutorials/modifying-sim-appearances/), by FellowFur
 * [Scumbumbo's XML Extractor](../tutorials/xml-extractor/), by Waffle
 * [Scumbumbo's XML File Finder](../tutorials/xml-file-finder/), by Waffle
@@ -128,6 +132,7 @@ May be stream of consciousness or about the thought process of modding
 
 * [Comparing Files with WinMerge](../tutorials/winmerge/), by Waffle
 * [Custom Maps](../tutorials/custom-maps/), by Alistu a.k.a. Menaceman44
+* [Fixing CC For New Occults](../tutorials/new-occult-fix), by Amethyst Lilac
 * [Modifying Sim Appearances](../tutorials/modifying-sim-appearances/), by FellowFur
 * [Scumbumbo's XML Extractor](../tutorials/xml-extractor/), by Waffle
 * [Scumbumbo's XML File Finder](../tutorials/xml-file-finder/), by Waffle
