@@ -39,7 +39,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'About This Site', slug: 'about/about' },
 						{ label: 'Contributors', slug: 'about/contributors' },
-						{ label: 'How to Contribute', slug: 'about/how-to-contribute-to-this-site'}
+						{ label: 'Contribution Guidelines', slug: 'about/contribution-guidelines'}
 					]
 				},
 			],
