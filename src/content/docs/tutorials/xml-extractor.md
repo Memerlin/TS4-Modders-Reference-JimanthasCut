@@ -5,17 +5,17 @@ description: A tutorial for using Scumbumbo's XML Extractor
 
 <sup><sub>A tutorial by Waffle</sup></sub>
 
-[Scumbumbo's XML Extractor](https://scumbumbomods.com/xml-extractor/) can be used to bulk extract all game XMLs at once to organized folders, which can then be navigated with the very powerful ***[XML File Finder](../../../../tutorials/xml-file-finder/)***, which is included in the download.
+[Scumbumbo's XML Extractor](https://scumbumbomods.com/xml-extractor/) can be used to bulk extract all game XMLs at once to organized folders, which can then be navigated with the very powerful ***[XML File Finder](../xml-file-finder/)***, which is included in the download.
 
 XML Extractor will extract the XMLs as .xml files which can simply be opened in a text editor. These files can also be opened directly in [Lot 51's Tdesc Builder](https://tdesc.lot51.cc/) for editing.
 
-A common use of the XML Extractor is to keep older versions of tuning around for comparison's sake after patches. If you extract the tuning after each patch, you can keep a folder of the previous tunings and a folder of the current tunings to easily compare them in a program such as ***[WinMerge, which you can find a tutorial for here](../../../../tutorials/winmerge/).***
+A common use of the XML Extractor is to keep older versions of tuning around for comparison's sake after patches. If you extract the tuning after each patch, you can keep a folder of the previous tunings and a folder of the current tunings to easily compare them in a program such as ***[WinMerge, which you can find a tutorial for here](../winmerge/).***
 
 ## Features Explanation
 
 XML Extractor is simple to use, but has a variety of options you may find confusing. 
 
-![XML Extractor with all the described options selected for basic usage, as described in the text below.](../../../../src/assets/File-Extractor-waffle.png)
+![XML Extractor with all the described options selected for basic usage, as described in the text below.](~/assets/File-Extractor-waffle.png)
 
 Under "Full Automatic Extract", simply direct the program to your game's install folder (Usually C:\\Program Files (x86)\\Origin Games\\The Sims 4 on Windows). Whichever folder contains the game's TS4.exe is correct.
 
@@ -69,7 +69,7 @@ Select your game folder, and create and select a Destination folder. Press Begin
 
 <br>
 
-Now you can use this tuning alongside ***[XML File Finder](../../../../tutorials/xml-file-finder/)*** to easily find connections between tuning files, to diagnose bugs, find out how something works, copy how EA does things for your own mods, and much more.
+Now you can use this tuning alongside ***[XML File Finder](../xml-file-finder/)*** to easily find connections between tuning files, to diagnose bugs, find out how something works, copy how EA does things for your own mods, and much more.
 
 ---
 

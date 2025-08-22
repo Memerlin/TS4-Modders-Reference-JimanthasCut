@@ -10,17 +10,17 @@ tableOfContents:
 
 This guide will go over the various menus and buttons at the top of [Sims 4 Studio](https://sims4studio.com/board/6/download-sims-studio-open-version), possibly the most commonly used tool in Sims 4 modding and custom content creation.
 
-![Top top left of Sims 4 Studio on Windows. The title bar has a house, a paint palette, and the S4S version number. The menu below has five options: File, Settings, Tools, Content Management, and Help](../../../../src/assets/s4s-top-amethyst.png)
+![Top top left of Sims 4 Studio on Windows. The title bar has a house, a paint palette, and the S4S version number. The menu below has five options: File, Settings, Tools, Content Management, and Help](~/assets/s4s-top-amethyst.png)
 
 *__Note__*: Macs have one set of menus at the top instead of two, and have the standard Mac app menu at the beginning and Window menu to the right, as seen below.
 
-![The top left of Sims 4 Studio on Mac. The app menu is open at the left, and File, Edit, Tools, Content Management, Window, and Help are to the right along the top.](../../../../src/assets/s4s-mac-menu-meg.png)
+![The top left of Sims 4 Studio on Mac. The app menu is open at the left, and File, Edit, Tools, Content Management, Window, and Help are to the right along the top.](~/assets/s4s-mac-menu-meg.png)
 
 # The title bar
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 Not available on Mac.
 
@@ -36,11 +36,11 @@ Next to the house is a paint palette. This is a drop-down menu that lets you pic
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 The File menu has four options:
 
-![The File menu of S4S, with four options: Main Menu, Save, Save As..., and Exit](../../../../src/assets/S4S-file-menu-amethyst.png)
+![The File menu of S4S, with four options: Main Menu, Save, Save As..., and Exit](~/assets/S4S-file-menu-amethyst.png)
 
 1. Main Menu: This will take you back to the main page of Sims 4 Studio. It will exit any package you're editing ***without*** saving anything that isn't already saved. Note that some things auto save and some don't, so make sure to back up your files because exiting without saving doesn't always reverse accidental or mistaken changes.
 2. Save: This will save your currently open package file. It also shows the kwyboard shortcut for save-as, which id Ctrl + S. If you don't have a currently open package, this option will be greyed out.
@@ -53,9 +53,9 @@ The File menu has four options:
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
-![The Settings menu of S4S, open to the General tab](../../../../src/assets/s4s-settings-general-amethyst.png)
+![The Settings menu of S4S, open to the General tab](~/assets/s4s-settings-general-amethyst.png)
 
 The Settings button in the menu will bring up the Settings window for S4S.
 
@@ -81,19 +81,19 @@ The UI tab has options to toggle on and off various confirmation messages, warni
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
-![The Tools menu of S4S, with the options listed below. The Modding sub-menu is open to the right.](../../../../src/assets/s4s-tools-modding-amethyst.png)
+![The Tools menu of S4S, with the options listed below. The Modding sub-menu is open to the right.](~/assets/s4s-tools-modding-amethyst.png)
 
 ### Extract Tuning...
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 The first option in the Tools menu is Extract Tuning... If you click it, S4S will begin processing combined tuning, and when that completes, a new window will open.
 
-![A window that says Export Tuning... at the top, with various files listed below, and check boxes and buttons at the bottom as listed below.](../../../../src/assets/s4s-export-tuning-amethyst.png)
+![A window that says Export Tuning... at the top, with various files listed below, and check boxes and buttons at the bottom as listed below.](~/assets/s4s-export-tuning-amethyst.png)
 
 Below the title bar is an empty search bar. You can use this to find the specific tuning files you're looking for. You may get multiple results with the same name, and there's no way to know which one(s) you want until you extract them -- grab them all, and delete any you end up with that you don't want. Sometimes you may not get all of the ones you select, but you should get the one(s) you need.
 
@@ -105,7 +105,7 @@ At the bottom, there are four check boxes and two buttons.
 
 *__Use Subfolders__*: Again, this only affects files if you extract them instead of adding them to a package. Having this on will put the extracted files in subfolders based on type. SimData will go in one folder, Account Reward Tuning will go in another, Achievement Tuning will go in another, etc. Except for SimData, this is based on the first part of the file name in the list: achievement/EP_05_PolarBearClub will get one file in a folder called Achievement Tuning, and account_reward/accountReward_DecemberEvent_02 will get one file in a folder called Account Reward Tuning and a second in a folder called SimData. Whether you have this checked is a matter of preference.
 
-*__Extract All__*: This will extract all tuning and SimData files. This is an alternative to using the [XML Extractor](../../../../tutorials/xml-extractor/) to extract tuning. This will take *a while*.
+*__Extract All__*: This will extract all tuning and SimData files. This is an alternative to using the [XML Extractor](../../tutorials/xml-extractor/) to extract tuning. This will take *a while*.
 
 *__Include Class Names__*: This will toggle including class names in the comments (`<!--posture_StandExclusive--></T>` vs `<!--Posture: posture_StandExclusive--></T>`). It's purely a matter of preference, but if you intend to compare a file from different patch levels, then it would be best to be consistent.
 
@@ -119,11 +119,11 @@ At the bottom, there are four check boxes and two buttons.
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called Game File Cruiser. You can use this to browse through the game's files.
 
-![The Game File Crusier window, as described below.](../../../../src/assets/s4s-gfc-amethyst.png)
+![The Game File Crusier window, as described below.](~/assets/s4s-gfc-amethyst.png)
 
 At the top left is a list of file types with check boxes. Above them is a filter bar. If you type into the filter bar, it will show you only file types that contain your search term. Above that are two buttons, All and Clear. All will select all file types. Clear will clear all check boxes. To see any files, you need to check at least one box.
 
@@ -141,11 +141,11 @@ Once you have your list of files, you can select one by clicking on it, and it w
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called String Table Lookup. You can use this to browse through the game's strings.
 
-![An image of the String Table Lookup window. At the top is a search bar with a Filter button to the right. Below that is a drop down list for selecting language, currently set to All. Then there is a table of strings in Chinese, with white headers with nearly invisible text that say Language, Key, and Text. At the bottom is a check box for 'Include all languages' and a button to 'Add to current package.'](../../../../src/assets/s4s-string-table-lookup-amethyst.png)
+![An image of the String Table Lookup window. At the top is a search bar with a Filter button to the right. Below that is a drop down list for selecting language, currently set to All. Then there is a table of strings in Chinese, with white headers with nearly invisible text that say Language, Key, and Text. At the bottom is a check box for 'Include all languages' and a button to 'Add to current package.'](~/assets/s4s-string-table-lookup-amethyst.png)
 
 At the top, you can enter a search term and then click the Filter button at the right to see only strings that contain your search.
 
@@ -159,11 +159,11 @@ Then the strings are displayed in three columns: language, key, and text.
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called Hash Generator. You can use this to hash various things that you need hashed.
 
-![Sims 4 Studio's Hash Generator, with various hashing options.](../../../../src/assets/s4s-hash-generator-amethyst.png)
+![Sims 4 Studio's Hash Generator, with various hashing options.](~/assets/s4s-hash-generator-amethyst.png)
 
 At the top, you can convert between decimal and hexidecimal numbers.
 
@@ -177,11 +177,11 @@ At the bottom is a check box to force the hashing to be high bit.
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 If you click this option, a new window will open called Color Palette. You can use this to save colour palettes for custom content and to apply color palette tags and swatch thumbnails.
 
-![The Color Palette window, with a list of palettes at the left, a name and creator name and description at the top right, with the palette color thumbnails below, and the selected swatch along with its tags at the bottom right.](../../../../src/assets/s4s-color-palette-amethyst.png)
+![The Color Palette window, with a list of palettes at the left, a name and creator name and description at the top right, with the palette color thumbnails below, and the selected swatch along with its tags at the bottom right.](~/assets/s4s-color-palette-amethyst.png)
 
 At the left, there's a list of palettes you've saved yourself or that you've put a .s4spalette file for in your Documents > Sims 4 Studio > Palettes folder. At the bottom are buttons to Add a new empty palette; Duplicate an existing palette, which you can then edit independently of the original; and Delete a palette.
 
@@ -207,11 +207,11 @@ This button will delete the localthumbcache.package file from your Documents > E
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 Modding is a sub menu with multiple options that are useful to creators.
 
-![The Tools menu of S4S, with the Modding sub-menu open to the right, with the options listed below.](../../../../src/assets/s4s-tools-modding-amethyst.png)
+![The Tools menu of S4S, with the Modding sub-menu open to the right, with the options listed below.](~/assets/s4s-tools-modding-amethyst.png)
 
 #### Catalog Thumbnail Overlay
 
@@ -285,11 +285,11 @@ This will fix the currently open file for a preset that cause toddlers to have d
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 Generate List is a sub menu with multiple options to create lists that are useful to creators.
 
-![The Tools menu of S4S, with the Generate List sub-menu open to the right, with the options listed below.](../../../../src/assets/s4s-generate-list-amethyst.png)
+![The Tools menu of S4S, with the Generate List sub-menu open to the right, with the options listed below.](~/assets/s4s-generate-list-amethyst.png)
 
 #### Icons
 
@@ -321,13 +321,13 @@ Will export a set of files, one per tag, that list all game items that use that 
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
-![The Tools menu of S4S, with the Generate List sub-menu open to the right, with the options listed below.](../../../../src/assets/s4s-browse-content-amethyst.png)
+![The Tools menu of S4S, with the Generate List sub-menu open to the right, with the options listed below.](~/assets/s4s-browse-content-amethyst.png)
 
 Browse Game Content is a sub menu that allows you to browse through all CAS, Build, or Buy items.
 
-![An infant wearing a flower hat from Enchanted by Nature selected in CAS Game Content, with other swatches of the same hat visible, and various filtering options.](../../../../src/assets/s4s-browse-cas-content-amethyst.png)
+![An infant wearing a flower hat from Enchanted by Nature selected in CAS Game Content, with other swatches of the same hat visible, and various filtering options.](~/assets/s4s-browse-cas-content-amethyst.png)
 
 Once you pick a category, it will bring up a window that you can scroll through and filter, and show information about whichever one you select, including textures, meshes, tags, and warehouse files.
 
@@ -337,7 +337,7 @@ Once you pick a category, it will bring up a window that you can scroll through 
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
 #### Export All
 
@@ -355,17 +355,17 @@ Imports all meshes and diffuse maps (main texture) into the currently selected c
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
-![The Content Management menu of S4S, with the options listed below. The Troubleshooting sub-menu is open to the right.](../../../../src/assets/s4s-content-management-amethyst.png)
+![The Content Management menu of S4S, with the options listed below. The Troubleshooting sub-menu is open to the right.](~/assets/s4s-content-management-amethyst.png)
 
 ### Merge Packages
 
-This will merge package files together into one package files. If you want to be able to unmerge it later, it's essential that you keep the [S4S Merged Package Manifest](../../../../reference/file-types/#s4s-merged-package-manifest) in the final package.
+This will merge package files together into one package files. If you want to be able to unmerge it later, it's essential that you keep the [S4S Merged Package Manifest](../file-types/#s4s-merged-package-manifest) in the final package.
 
 ### Un-merge Packages
 
-Attempts to un-merge previously merged packages. This may fail, usually because there's no [S4S Merged Package Manifest](../../../../reference/file-types/#s4s-merged-package-manifest) in the package you're trying to unmerge. This may be because the manifest was deleted, the file was made using a version of studio that didn't create a manifest, it was never merged to start with, or it was merged using a different program.
+Attempts to un-merge previously merged packages. This may fail, usually because there's no [S4S Merged Package Manifest](../file-types/#s4s-merged-package-manifest) in the package you're trying to unmerge. This may be because the manifest was deleted, the file was made using a version of studio that didn't create a manifest, it was never merged to start with, or it was merged using a different program.
 
 ### Batch Fixes
 
@@ -397,9 +397,9 @@ This will search the folder you select to check for any objects with more than E
 
 <details open>
 
-<summary>Show</summary>
+<summary>Hide</summary>
 
-![The Help menu of S4S, with the options listed below. The Cheats sub-menu is open to the right.](../../../../src/assets/s4s-tools-modding-amethyst.png)
+![The Help menu of S4S, with the options listed below. The Cheats sub-menu is open to the right.](~/assets/s4s-tools-modding-amethyst.png)
 
 
 ### About

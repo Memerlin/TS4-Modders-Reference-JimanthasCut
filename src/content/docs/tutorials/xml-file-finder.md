@@ -13,7 +13,7 @@ But you'll also be able to see every single piece of tuning that references the 
 
 This can be very complicated to parse through, but very powerful for understanding how the game works to make your own mods or change how EA tuning works. 
 
-To use the XML File Finder, you'll need to first use XML Extractor (found in the same download), which you can find a tutorial for ***[here](../../../../tutorials/xml-extractor/).***
+To use the XML File Finder, you'll need to first use XML Extractor (found in the same download), which you can find a tutorial for ***[here](../xml-extractor/).***
 
 Unfortunately, it's not very useful for finding things inside of tunings that aren't references to other tunings...if you want to find which tunings reference things like tags, icons, or even just lines of tuning, you'll want to use [Lumpinou's Tuning Game Example Finder!](https://app.ts4modhound.com/tools/game_example_search)
 
@@ -51,7 +51,7 @@ Scroll until you find Trait Bro under "Traits". Be sure "group items by resource
 
 Right click on "Trait Bro" and select "Browse References".
 
-![The XML File Finder with "trait_bro" entered as a search query. Trait_Bro is selected with right-click, and Browse References is highlighted.](../../../../src/assets/File-Finder-1-waffle.png)
+![The XML File Finder with "trait_bro" entered as a search query. Trait_Bro is selected with right-click, and Browse References is highlighted.](~/assets/File-Finder-1-waffle.png)
 
 A window will pop up. At the top is your currently selected tuning. On the left is every tuning file in the game that lists the selected tuning, and on the right is every tuning in the game that is listed *by* the selected tuning.
 
@@ -67,11 +67,11 @@ Since Traits often have Trait Buffs, we can see the Buff\_Trait\_Bro tuning on t
 74073<!--Commodity: commodity\_trait\_bro\_broximity-->
 ```
 
-![The tuning found inside the Buff_Trait_Bro xml file. At the center are two commodities added to Sims by the Buff, which File Finder displays as its only "references to".](../../../../src/assets/File-Finder-2-waffle.png)
+![The tuning found inside the Buff_Trait_Bro xml file. At the center are two commodities added to Sims by the Buff, which File Finder displays as its only "references to".](~/assets/File-Finder-2-waffle.png)
 
 Instead, click on Buff\_Trait\_Bro. The window will update- you now have Buff\_Trait\_Bro selected and can see everything that references it on the left, and everything it references on the right. You just saw the two commodity tunings it references inside of its XML tuning, right? Now, they're listed in file finder because those were the only two references inside this XML. 
 
-![Buff_Trait_Bro showing its references, both from and to](../../../../src/assets/File-finder-3-waffle.png)
+![Buff_Trait_Bro showing its references, both from and to](~/assets/File-finder-3-waffle.png)
 
 When viewing a particularly complicated XML, this is a very fast way to check everything that it references without having to scroll the entire thing and scan for tuning names and comments!
 
@@ -85,7 +85,7 @@ If you head back to trait\_bro, you can see on the left side of the screen all s
 
 A second reference window will pop up, and the old one will still be usable. You can use this feature when things get messy and confusing to keep track of what tunings you're searching through. 
 
-![FThe File Finder open, with references for the selected tuning trait_Bro open on top, and another reference window for Whim_bro_broHugSim on top of that. Multiple reference windows can be open at once to track several pieces of tuning.](../../../../src/assets/File-Finder-4-waffle.png)
+![FThe File Finder open, with references for the selected tuning trait_Bro open on top, and another reference window for Whim_bro_broHugSim on top of that. Multiple reference windows can be open at once to track several pieces of tuning.](~/assets/File-Finder-4-waffle.png)
 
 Let's figure out how a Sim can get this whim. Seems pretty obvious, but you'll see want\_BroHug on the left. Click it. Now we see whimset\_HasTraitBro on he left...so this want comes from that whimset! But where does that whimset come from? Click it!
 
