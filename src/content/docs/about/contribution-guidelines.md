@@ -1,9 +1,6 @@
 ---
 title: Contribution Guidelines
 description: Guidelines to follow if you want to contribute to The Sims 4 Modders Reference
-tableOfContents: true
-sidebar:
-    order: 1
 ---
 
 **The Sims 4 Modders Reference** has the following guidelines for contributors and contributions alike. Please follow them to the best of your ability when submitting your contributions.
@@ -33,9 +30,11 @@ All images should have alternative text, also known as "alt text".
 
 ## Credits
 
-If you don't submit through GitHub, please give amethyst lilac a name and a link to credit you with. Otherwise, your discord username will be used, as well as any link that can be found (or none, if no link can be found).
+If you don't submit through GitHub, you can choose to be anonymous. 
 
-The link can be of any website you host your mods in.
+If you want to be credited, please give amethyst lilac or Jimantha a name and a link to credit you with. Otherwise, your discord username will be used, as well as any link that can be found (or none, if no link can be found).
+
+The link can be of any website you host your mods in, as long as they're PG-13.
 
 ## Possible edits
 
